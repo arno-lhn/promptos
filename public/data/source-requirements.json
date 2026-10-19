@@ -1,0 +1,38 @@
+[
+  {
+    "id": "web",
+    "label": "Effectuer des recherches sur Internet lorsque cette fonctionnalité est disponible",
+    "promptText": "Lorsque tu disposes d’un accès à Internet, recherche des informations fiables et pertinentes.",
+    "active": true
+  },
+  {
+    "id": "verify",
+    "label": "Vérifier les informations factuelles importantes",
+    "promptText": "Vérifie les informations factuelles importantes. Si tu ne peux pas les vérifier, indique-le clairement.",
+    "active": true
+  },
+  {
+    "id": "sources",
+    "label": "Fournir les sources utilisées",
+    "promptText": "Indique les sources effectivement utilisées. N’invente pas de sources.",
+    "active": true
+  },
+  {
+    "id": "bibliography",
+    "label": "Présenter les références bibliographiques",
+    "promptText": "Présente les références bibliographiques effectivement utilisées. N’invente pas de références.",
+    "active": true
+  },
+  {
+    "id": "links",
+    "label": "Fournir les liens vers les sources consultées",
+    "promptText": "Fournis les liens vers les sources effectivement consultées lorsque cela est possible. N’invente pas de liens.",
+    "active": true
+  },
+  {
+    "id": "uncertainty",
+    "label": "Signaler les informations incertaines ou non vérifiables",
+    "promptText": "Signale clairement les informations incertaines ou non vérifiables.",
+    "active": true
+  }
+]

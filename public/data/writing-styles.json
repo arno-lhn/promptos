@@ -1,0 +1,86 @@
+[
+  {
+    "id": "accessible",
+    "label": "Simple et accessible",
+    "promptText": "Utilise un style simple et accessible.",
+    "active": true
+  },
+  {
+    "id": "detailed",
+    "label": "Détaillé",
+    "promptText": "Utilise un style détaillé.",
+    "active": true
+  },
+  {
+    "id": "concise",
+    "label": "Synthétique",
+    "promptText": "Utilise un style synthétique.",
+    "active": true
+  },
+  {
+    "id": "popularized",
+    "label": "Vulgarisé",
+    "promptText": "Utilise un style vulgarisé.",
+    "active": true
+  },
+  {
+    "id": "structured",
+    "label": "Structuré",
+    "promptText": "Utilise un style structuré.",
+    "active": true
+  },
+  {
+    "id": "reasoned",
+    "label": "Argumenté",
+    "promptText": "Utilise un style argumenté.",
+    "active": true
+  },
+  {
+    "id": "descriptive",
+    "label": "Descriptif",
+    "promptText": "Utilise un style descriptif.",
+    "active": true
+  },
+  {
+    "id": "narrative",
+    "label": "Narratif",
+    "promptText": "Utilise un style narratif.",
+    "active": true
+  },
+  {
+    "id": "explanatory",
+    "label": "Explicatif",
+    "promptText": "Utilise un style explicatif.",
+    "active": true
+  },
+  {
+    "id": "technical",
+    "label": "Technique",
+    "promptText": "Utilise un style technique.",
+    "active": true
+  },
+  {
+    "id": "academic",
+    "label": "Académique",
+    "promptText": "Utilise un style académique.",
+    "active": true
+  },
+  {
+    "id": "practical",
+    "label": "Pratique",
+    "promptText": "Utilise un style pratique.",
+    "active": true
+  },
+  {
+    "id": "action",
+    "label": "Orienté vers l’action",
+    "promptText": "Utilise un style orienté vers l’action.",
+    "active": true
+  },
+  {
+    "id": "step-by-step",
+    "label": "Étape par étape",
+    "promptText": "Rédige en procédant étape par étape.",
+    "active": true
+  }
+]

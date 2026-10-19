@@ -1,0 +1,140 @@
+[
+  {
+    "id": "trainer",
+    "label": "Formateur",
+    "promptText": "Adopte le rôle d’un formateur.",
+    "active": true
+  },
+  {
+    "id": "teacher",
+    "label": "Enseignant",
+    "promptText": "Adopte le rôle d’un enseignant.",
+    "active": true
+  },
+  {
+    "id": "consultant",
+    "label": "Consultant",
+    "promptText": "Adopte le rôle d’un consultant.",
+    "active": true
+  },
+  {
+    "id": "expert",
+    "label": "Expert métier",
+    "promptText": "Adopte le rôle d’un expert métier.",
+    "active": true
+  },
+  {
+    "id": "analyst",
+    "label": "Analyste",
+    "promptText": "Adopte le rôle d’un analyste.",
+    "active": true
+  },
+  {
+    "id": "writer",
+    "label": "Rédacteur",
+    "promptText": "Adopte le rôle d’un rédacteur.",
+    "active": true
+  },
+  {
+    "id": "coach",
+    "label": "Coach",
+    "promptText": "Adopte le rôle d’un coach.",
+    "active": true
+  },
+  {
+    "id": "advisor",
+    "label": "Conseiller",
+    "promptText": "Adopte le rôle d’un conseiller.",
+    "active": true
+  },
+  {
+    "id": "mentor",
+    "label": "Mentor",
+    "promptText": "Adopte le rôle d’un mentor.",
+    "active": true
+  },
+  {
+    "id": "admin-assistant",
+    "label": "Assistant administratif",
+    "promptText": "Adopte le rôle d’un assistant administratif.",
+    "active": true
+  },
+  {
+    "id": "hr-manager",
+    "label": "Responsable des ressources humaines",
+    "promptText": "Adopte le rôle d’un responsable des ressources humaines.",
+    "active": true
+  },
+  {
+    "id": "accountant",
+    "label": "Comptable",
+    "promptText": "Adopte le rôle d’un comptable.",
+    "active": true
+  },
+  {
+    "id": "developer",
+    "label": "Développeur informatique",
+    "promptText": "Adopte le rôle d’un développeur informatique.",
+    "active": true
+  },
+  {
+    "id": "communications",
+    "label": "Chargé de communication",
+    "promptText": "Adopte le rôle d’un chargé de communication.",
+    "active": true
+  },
+  {
+    "id": "journalist",
+    "label": "Journaliste",
+    "promptText": "Adopte le rôle d’un journaliste.",
+    "active": true
+  },
+  {
+    "id": "researcher",
+    "label": "Chercheur",
+    "promptText": "Adopte le rôle d’un chercheur.",
+    "active": true
+  },
+  {
+    "id": "mediator",
+    "label": "Médiateur",
+    "promptText": "Adopte le rôle d’un médiateur.",
+    "active": true
+  },
+  {
+    "id": "learning-designer",
+    "label": "Concepteur pédagogique",
+    "promptText": "Adopte le rôle d’un concepteur pédagogique.",
+    "active": true
+  },
+  {
+    "id": "project-manager",
+    "label": "Gestionnaire de projet",
+    "promptText": "Adopte le rôle d’un gestionnaire de projet.",
+    "active": true
+  },
+  {
+    "id": "facilitator",
+    "label": "Facilitateur",
+    "promptText": "Adopte le rôle d’un facilitateur.",
+    "active": true
+  },
+  {
+    "id": "strategist",
+    "label": "Stratège",
+    "promptText": "Adopte le rôle d’un stratège.",
+    "active": true
+  },
+  {
+    "id": "recruiter",
+    "label": "Recruteur",
+    "promptText": "Adopte le rôle d’un recruteur.",
+    "active": true
+  },
+  {
+    "id": "ux-designer",
+    "label": "Designer UX",
+    "promptText": "Adopte le rôle d’un designer UX.",
+    "active": true
+  }
+]

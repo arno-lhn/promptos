@@ -1,0 +1,50 @@
+[
+  {
+    "id": "kind",
+    "label": "Bienveillante",
+    "promptText": "Adopte une posture bienveillante dans tes réponses.",
+    "active": true
+  },
+  {
+    "id": "neutral",
+    "label": "Neutre",
+    "promptText": "Adopte une posture neutre dans tes réponses.",
+    "active": true
+  },
+  {
+    "id": "critical",
+    "label": "Critique",
+    "promptText": "Adopte une posture critique dans tes réponses.",
+    "active": true
+  },
+  {
+    "id": "directive",
+    "label": "Directive",
+    "promptText": "Adopte une posture directive dans tes réponses.",
+    "active": true
+  },
+  {
+    "id": "collaborative",
+    "label": "Collaborative",
+    "promptText": "Adopte une posture collaborative dans tes réponses.",
+    "active": true
+  },
+  {
+    "id": "curious",
+    "label": "Curieuse",
+    "promptText": "Adopte une posture curieuse dans tes réponses.",
+    "active": true
+  },
+  {
+    "id": "educational",
+    "label": "Pédagogique",
+    "promptText": "Adopte une posture pédagogique dans tes réponses.",
+    "active": true
+  },
+  {
+    "id": "demanding",
+    "label": "Exigeante",
+    "promptText": "Adopte une posture exigeante dans tes réponses.",
+    "active": true
+  }
+]

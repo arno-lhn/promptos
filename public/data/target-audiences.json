@@ -1,0 +1,122 @@
+[
+  {
+    "id": "general",
+    "label": "Grand public",
+    "promptText": "Le contenu est destiné au grand public.",
+    "active": true
+  },
+  {
+    "id": "beginners",
+    "label": "Adultes débutants",
+    "promptText": "Le contenu est destiné à des adultes débutants.",
+    "active": true
+  },
+  {
+    "id": "nonspecialists",
+    "label": "Public non spécialiste",
+    "promptText": "Le contenu est destiné à un public non spécialiste.",
+    "active": true
+  },
+  {
+    "id": "students",
+    "label": "Étudiants",
+    "promptText": "Le contenu est destiné à des étudiants.",
+    "active": true
+  },
+  {
+    "id": "highschool",
+    "label": "Lycéens",
+    "promptText": "Le contenu est destiné à des lycéens.",
+    "active": true
+  },
+  {
+    "id": "teachers",
+    "label": "Enseignants",
+    "promptText": "Le contenu est destiné à des enseignants.",
+    "active": true
+  },
+  {
+    "id": "trainers",
+    "label": "Formateurs",
+    "promptText": "Le contenu est destiné à des formateurs.",
+    "active": true
+  },
+  {
+    "id": "career-change",
+    "label": "Professionnels en reconversion",
+    "promptText": "Le contenu est destiné à des professionnels en reconversion.",
+    "active": true
+  },
+  {
+    "id": "new-staff",
+    "label": "Nouveaux collaborateurs",
+    "promptText": "Le contenu est destiné à de nouveaux collaborateurs.",
+    "active": true
+  },
+  {
+    "id": "experienced-staff",
+    "label": "Collaborateurs expérimentés",
+    "promptText": "Le contenu est destiné à des collaborateurs expérimentés.",
+    "active": true
+  },
+  {
+    "id": "managers",
+    "label": "Managers",
+    "promptText": "Le contenu est destiné à des managers.",
+    "active": true
+  },
+  {
+    "id": "executives",
+    "label": "Cadres dirigeants",
+    "promptText": "Le contenu est destiné à des cadres dirigeants.",
+    "active": true
+  },
+  {
+    "id": "hr",
+    "label": "Professionnels des ressources humaines",
+    "promptText": "Le contenu est destiné à des professionnels des ressources humaines.",
+    "active": true
+  },
+  {
+    "id": "sales",
+    "label": "Équipes commerciales",
+    "promptText": "Le contenu est destiné à des équipes commerciales.",
+    "active": true
+  },
+  {
+    "id": "administration",
+    "label": "Personnel administratif",
+    "promptText": "Le contenu est destiné au personnel administratif.",
+    "active": true
+  },
+  {
+    "id": "freelancers",
+    "label": "Indépendants",
+    "promptText": "Le contenu est destiné à des indépendants.",
+    "active": true
+  },
+  {
+    "id": "entrepreneurs",
+    "label": "Entrepreneurs",
+    "promptText": "Le contenu est destiné à des entrepreneurs.",
+    "active": true
+  },
+  {
+    "id": "experts",
+    "label": "Experts d’un domaine",
+    "promptText": "Le contenu est destiné à des experts d’un domaine.",
+    "active": true
+  },
+  {
+    "id": "field-teams",
+    "label": "Équipes terrain",
+    "promptText": "Le contenu est destiné à des équipes terrain.",
+    "active": true
+  },
+  {
+    "id": "digital-beginners",
+    "label": "Personnes éloignées du numérique",
+    "promptText": "Le contenu est destiné à des personnes éloignées du numérique.",
+    "active": true
+  }
+]

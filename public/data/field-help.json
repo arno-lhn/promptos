@@ -1,0 +1,155 @@
+[
+  {
+    "id": "role-posture",
+    "title": "Rôle et posture",
+    "promptTitle": "RÔLE ET POSTURE",
+    "description": "Donnez une direction à l’IA : avec quel regard et quelle approche doit-elle vous répondre ?",
+    "note": "Un rôle oriente la réponse, mais ne garantit pas son exactitude. Gardez votre esprit critique.",
+    "fields": [
+      {
+        "id": "role",
+        "label": "Quel rôle donner à l’IA ?",
+        "type": "select",
+        "placeholder": "Choisir un rôle",
+        "help": "Le rôle permet d’orienter l’approche que l’IA doit adopter. Un formateur privilégiera une démarche explicative, tandis qu’un analyste examinera les informations. Un rôle ne confère pas une expertise réelle à l’IA."
+      },
+      {
+        "id": "posture",
+        "label": "Quelle posture doit-elle adopter ?",
+        "type": "radio",
+        "help": "La posture influence la manière dont l’IA répond. Une posture bienveillante privilégie l’accompagnement ; une posture critique encourage l’examen des limites et des contradictions. Vous pouvez effacer votre choix à tout moment."
+      },
+      {
+        "id": "intention",
+        "label": "Avec quelle intention ?",
+        "type": "select",
+        "placeholder": "Choisir une intention",
+        "help": "L’intention définit l’approche générale : guider, expliquer ou faire réfléchir. Elle se distingue de la tâche, qui indique l’action concrète à accomplir. Par exemple : guider est une intention, rédiger un email est une tâche."
+      }
+    ]
+  },
+  {
+    "id": "contexte-tache",
+    "title": "Contexte et tâche",
+    "promptTitle": "CONTEXTE ET TÂCHE",
+    "description": "Exprimez ce que vous souhaitez accomplir et donnez les informations utiles pour comprendre votre demande.",
+    "fields": [
+      {
+        "id": "task",
+        "label": "Que souhaitez-vous accomplir ?",
+        "type": "select",
+        "placeholder": "Choisir une tâche générale",
+        "help": "La tâche est l’action concrète que vous demandez à l’IA : rédiger, comparer, expliquer… Choisissez celle qui se rapproche de votre besoin. Vous pouvez aussi utiliser uniquement le champ de précisions."
+      },
+      {
+        "id": "taskDetails",
+        "label": "Précisez ce que vous souhaitez accomplir.",
+        "type": "textarea",
+        "placeholder": "Exemple : Je viens d’intégrer un service de paie et je souhaite apprendre à utiliser Sage pour réaliser mes premières opérations.",
+        "help": "Décrivez votre besoin avec vos mots. Quel sujet, quelle situation, quel résultat ? Votre texte sera intégré tel que vous l’avez rédigé, sans reformulation. Ce champ suffit à lui seul pour construire un prompt."
+      },
+      {
+        "id": "context",
+        "label": "Dans quel contexte ?",
+        "type": "checkbox",
+        "help": "Le contexte situe votre demande. Une explication pour un usage personnel peut différer d’un document professionnel. Plusieurs contextes peuvent se compléter : professionnel et formation, par exemple."
+      },
+      {
+        "id": "knowledgeLevel",
+        "label": "Quel est votre niveau sur ce sujet ?",
+        "type": "radio",
+        "help": "Il s’agit de votre connaissance du sujet, pas de votre maîtrise de l’IA. Cette indication aide à demander des explications adaptées. Le public destinataire du résultat se précise dans le bloc suivant."
+      },
+      {
+        "id": "sourceRequirements",
+        "label": "Vérification et sources",
+        "type": "checkbox",
+        "help": "Ces instructions demandent à l’IA externe de vérifier ses informations et d’indiquer ses sources. PromptOS n’effectue aucune recherche. Les possibilités dépendent de l’outil dans lequel vous utiliserez le prompt ; vérifiez les références fournies."
+      }
+    ]
+  },
+  {
+    "id": "public-cible",
+    "title": "Public cible",
+    "promptTitle": "PUBLIC CIBLE",
+    "description": "À qui s’adresse le résultat ? Distinguez votre propre niveau des besoins des personnes qui vont le lire.",
+    "fields": [
+      {
+        "id": "targetAudience",
+        "label": "À qui est destiné le résultat ?",
+        "type": "select",
+        "placeholder": "Choisir un public",
+        "help": "Le public cible correspond aux personnes qui utiliseront ou consulteront le résultat. Une même information s’explique différemment à un débutant, un professionnel expérimenté ou un enfant."
+      },
+      {
+        "id": "audienceDetails",
+        "label": "Souhaitez-vous préciser à qui s’adresse le résultat ?",
+        "type": "textarea",
+        "placeholder": "Exemple : Des collaborateurs juniors qui viennent d’intégrer le service des ressources humaines.",
+        "help": "Précisez les besoins ou les particularités des destinataires : métier, expérience, attentes… Vous pouvez décrire votre public ici sans sélectionner de public prédéfini. Votre texte est conservé tel quel."
+      }
+    ]
+  },
+  {
+    "id": "cadrage",
+    "title": "Cadrage opérationnel",
+    "promptTitle": "CADRAGE OPÉRATIONNEL ET ÉLÉMENTS À ÉVITER",
+    "description": "Précisez où et comment le résultat sera utilisé, ainsi que les éléments à éviter.",
+    "fields": [
+      {
+        "id": "domains",
+        "label": "Dans quel domaine d’application ?",
+        "type": "checkbox",
+        "help": "Le domaine apporte un repère métier. Vous pouvez associer plusieurs domaines si votre demande les croise : ressources humaines et comptabilité, par exemple."
+      },
+      {
+        "id": "operationalContext",
+        "label": "Comment le résultat sera-t-il utilisé ?",
+        "type": "select",
+        "placeholder": "Choisir un cadre d’utilisation",
+        "help": "Le cadre opérationnel décrit l’usage concret du résultat. Par exemple, un document peut servir à accompagner une prise de poste ou à préparer une réunion."
+      },
+      {
+        "id": "operationalDetails",
+        "label": "Souhaitez-vous préciser les conditions d’utilisation du résultat ?",
+        "type": "textarea",
+        "placeholder": "Exemple : Ce contenu servira pendant une séance d’intégration de nouveaux salariés au service comptabilité.",
+        "help": "Ajoutez les conditions utiles : durée d’une séance, support disponible, situation de travail… Vous pouvez utiliser ce champ seul. Le texte sera repris sans reformulation."
+      },
+      {
+        "id": "avoidElements",
+        "label": "Que faut-il éviter dans la réponse ?",
+        "type": "checkbox",
+        "help": "Un prompt peut préciser ce que l’IA doit faire, mais aussi ce qu’elle doit éviter. Ces contraintes délimitent le résultat attendu. Elles ne garantissent pas que l’IA respectera parfaitement toutes les instructions."
+      }
+    ]
+  },
+  {
+    "id": "ton-style-format",
+    "title": "Ton, style et format",
+    "promptTitle": "TON, STYLE ET FORMAT",
+    "description": "Choisissez la manière de s’adresser au public, la façon de rédiger et la forme du résultat.",
+    "fields": [
+      {
+        "id": "tone",
+        "label": "Quel ton employer ?",
+        "type": "select",
+        "placeholder": "Choisir un ton",
+        "help": "Le ton est la manière de s’adresser au destinataire : professionnelle, encourageante, directe… Il donne une couleur à la relation avec le lecteur."
+      },
+      {
+        "id": "writingStyle",
+        "label": "Quel style rédactionnel ?",
+        "type": "select",
+        "placeholder": "Choisir un style",
+        "help": "Le style décrit la manière de rédiger : synthétique, détaillée, vulgarisée… Un ton professionnel peut très bien s’associer à un style simple et accessible."
+      },
+      {
+        "id": "outputFormat",
+        "label": "Sous quelle forme présenter le résultat ?",
+        "type": "radio",
+        "help": "Le format définit la forme concrète du résultat : email, tableau, guide… Le préciser permet de demander un contenu plus facile à utiliser. Le format est indépendant du ton et du style."
+      }
+    ]
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "hr",
+    "label": "Ressources humaines",
+    "promptText": "des ressources humaines",
+    "active": true
+  },
+  {
+    "id": "accounting",
+    "label": "Comptabilité",
+    "promptText": "de la comptabilité",
+    "active": true
+  },
+  {
+    "id": "finance",
+    "label": "Finance",
+    "promptText": "de la finance",
+    "active": true
+  },
+  {
+    "id": "training",
+    "label": "Formation professionnelle",
+    "promptText": "de la formation professionnelle",
+    "active": true
+  },
+  {
+    "id": "education",
+    "label": "Éducation",
+    "promptText": "de l’éducation",
+    "active": true
+  },
+  {
+    "id": "it",
+    "label": "Informatique",
+    "promptText": "de l’informatique",
+    "active": true
+  },
+  {
+    "id": "web",
+    "label": "Développement web",
+    "promptText": "du développement web",
+    "active": true
+  },
+  {
+    "id": "communications",
+    "label": "Communication",
+    "promptText": "de la communication",
+    "active": true
+  },
+  {
+    "id": "marketing",
+    "label": "Marketing",
+    "promptText": "du marketing",
+    "active": true
+  },
+  {
+    "id": "sales",
+    "label": "Commerce",
+    "promptText": "du commerce",
+    "active": true
+  },
+  {
+    "id": "management",
+    "label": "Management",
+    "promptText": "du management",
+    "active": true
+  },
+  {
+    "id": "administration",
+    "label": "Administration",
+    "promptText": "de l’administration",
+    "active": true
+  },
+  {
+    "id": "projects",
+    "label": "Gestion de projet",
+    "promptText": "de la gestion de projet",
+    "active": true
+  },
+  {
+    "id": "entrepreneurship",
+    "label": "Entrepreneuriat",
+    "promptText": "de l’entrepreneuriat",
+    "active": true
+  },
+  {
+    "id": "health",
+    "label": "Santé",
+    "promptText": "de la santé",
+    "active": true
+  },
+  {
+    "id": "social",
+    "label": "Action sociale",
+    "promptText": "de l’action sociale",
+    "active": true
+  },
+  {
+    "id": "research",
+    "label": "Recherche",
+    "promptText": "de la recherche",
+    "active": true
+  },
+  {
+    "id": "daily-life",
+    "label": "Vie quotidienne",
+    "promptText": "de la vie quotidienne",
+    "active": true
+  }
+]

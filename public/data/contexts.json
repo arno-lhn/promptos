@@ -1,0 +1,74 @@
+[
+  {
+    "id": "professional",
+    "label": "Professionnel",
+    "promptText": "un contexte professionnel",
+    "active": true
+  },
+  {
+    "id": "personal",
+    "label": "Personnel",
+    "promptText": "un contexte personnel",
+    "active": true
+  },
+  {
+    "id": "educational",
+    "label": "Éducatif",
+    "promptText": "un contexte éducatif",
+    "active": true
+  },
+  {
+    "id": "nonprofit",
+    "label": "Associatif",
+    "promptText": "un contexte associatif",
+    "active": true
+  },
+  {
+    "id": "commercial",
+    "label": "Commercial",
+    "promptText": "un contexte commercial",
+    "active": true
+  },
+  {
+    "id": "technical",
+    "label": "Technique",
+    "promptText": "un contexte technique",
+    "active": true
+  },
+  {
+    "id": "scientific",
+    "label": "Scientifique",
+    "promptText": "un contexte scientifique",
+    "active": true
+  },
+  {
+    "id": "administrative",
+    "label": "Administratif",
+    "promptText": "un contexte administratif",
+    "active": true
+  },
+  {
+    "id": "creative",
+    "label": "Créatif",
+    "promptText": "un contexte créatif",
+    "active": true
+  },
+  {
+    "id": "research",
+    "label": "Recherche",
+    "promptText": "un contexte de recherche",
+    "active": true
+  },
+  {
+    "id": "training",
+    "label": "Formation",
+    "promptText": "un contexte de formation",
+    "active": true
+  },
+  {
+    "id": "management",
+    "label": "Management",
+    "promptText": "un contexte de management",
+    "active": true
+  }
+]

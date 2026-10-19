@@ -1,16 +1,36 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Pensez clair. Créez mieux.">
+  <section class="hero page-width">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="small-dot"></span> VOTRE ATELIER DE PROMPTING</span>
+      <h1>Pensez clair.<br /><span class="highlight">Créez mieux.<svg viewBox="0 0 400 18" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12 Q180 -3 396 8" /></svg></span></h1>
+      <p class="hero-lead">Les bonnes réponses commencent<br class="desktop-break" /> par une demande bien construite.</p>
+      <p class="hero-description">PromptOS est un atelier pédagogique qui vous accompagne dans la construction de vos premiers prompts pour l’intelligence artificielle. Sélectionnez les éléments qui correspondent à votre besoin, précisez votre demande et obtenez un prompt structuré que vous pourrez tester dans l’IA de votre choix.</p>
+      <a class="button primary hero-cta" href="/atelier/">Commencer à construire mon prompt <span aria-hidden="true">↗</span></a>
+      <div class="hero-reassurance"><span>✓ Sans inscription</span><span>✓ À votre rythme</span><span>✓ Aucun prérequis</span></div>
+    </div>
+    <div class="hero-visual" aria-label="Exemple illustré des composants d’un prompt">
+      <div class="visual-grid" aria-hidden="true"></div>
+      <div class="orbit-label"><span aria-hidden="true">✳</span> Une intention. Une structure. Votre prompt.</div>
+      <div class="prompt-demo">
+        <div class="demo-toolbar"><span class="demo-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>MON PREMIER PROMPT</span><span aria-hidden="true">↗</span></div>
+        <div class="demo-body"><div class="demo-line"><span class="demo-tag">01 · RÔLE</span><p>Adopte le rôle d’un <mark>formateur.</mark></p></div><div class="demo-line"><span class="demo-tag">02 · TÂCHE</span><p>Explique-moi les bases<br />de la gestion de projet.</p></div><div class="demo-line"><span class="demo-tag">03 · PUBLIC</span><p>Je m’adresse à des <mark>débutants.</mark></p></div><div class="demo-line"><span class="demo-tag">04 · CADRAGE</span><p>Évite le jargon non expliqué.</p></div><div class="demo-line"><span class="demo-tag">05 · FORMAT</span><p>Présente un guide <mark>étape par étape.</mark></p></div></div>
+        <div class="demo-footer"><span class="local-dot"></span> Vos idées prennent forme.<span aria-hidden="true">↵</span></div>
+      </div>
+      <div class="visual-sticker"><span aria-hidden="true">↳</span><span>Pas de formule magique.<br /><strong>Juste une pensée plus claire.</strong></span></div>
+      <span class="visual-plus plus-one" aria-hidden="true">+</span><span class="visual-plus plus-two" aria-hidden="true">+</span>
+    </div>
+  </section>
+  <div class="principle-strip"><div class="page-width"><span>VOS MOTS, VOS CHOIX</span><p>Un bon prompt ne commence pas par une formule magique,<br class="desktop-break" /> mais par une intention claire et une demande structurée.</p><span class="strip-star" aria-hidden="true">✳</span></div></div>
+  <section class="method page-width" aria-labelledby="method-title">
+    <div class="method-heading"><div><span class="eyebrow">DE L’IDÉE À LA DEMANDE</span><h2 id="method-title">Construire. Comprendre.<br />Puis faire par vous-même.</h2></div><p>Un atelier pour vous lancer aujourd’hui<br class="desktop-break" /> et gagner en autonomie demain.</p></div>
+    <div class="method-grid">
+      <article><span class="method-number">01 /</span><div class="method-symbol" aria-hidden="true">[ + ]</div><h3>Choisissez vos repères.</h3><p>Rôle, tâche, public, contraintes, format : explorez les blocs qui vous sont utiles, dans l’ordre qui vous convient.</p></article>
+      <article><span class="method-number">02 /</span><div class="method-symbol" aria-hidden="true">[ ≡ ]</div><h3>Ajoutez vos mots.</h3><p>Précisez votre situation et votre besoin. Les aides vous expliquent l’utilité de chaque composant.</p></article>
+      <article><span class="method-number">03 /</span><div class="method-symbol" aria-hidden="true">[ ↗ ]</div><h3>Testez votre prompt.</h3><p>Copiez votre demande structurée dans l’IA de votre choix. Observez la réponse et ajustez vos instructions.</p></article>
+    </div>
+  </section>
+  <section class="closing-section page-width"><div><span class="eyebrow">UN ESPACE POUR APPRENDRE</span><h2>Votre réflexion fait<br />toute la différence.</h2><p>PromptOS assemble ce que vous lui donnez. Aucune IA intégrée,<br class="desktop-break" /> aucun compte, aucune transmission de vos saisies.</p></div><a class="button dark" href="/atelier/">Entrer dans l’atelier <span aria-hidden="true">↗</span></a></section>
+</BaseLayout>

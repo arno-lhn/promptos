@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PromptWorkshop from '../components/workshop/PromptWorkshop.svelte';
+---
+<BaseLayout title="L’Atelier" workshop>
+  <noscript><div class="noscript-message">Activez JavaScript pour utiliser les sélections et construire votre prompt. L’atelier fonctionne ensuite entièrement dans votre navigateur.</div></noscript>
+  <PromptWorkshop client:load />
+</BaseLayout>

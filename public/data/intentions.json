@@ -1,0 +1,74 @@
+[
+  {
+    "id": "explain",
+    "label": "Expliquer",
+    "promptText": "Ton approche doit principalement consister à expliquer.",
+    "active": true
+  },
+  {
+    "id": "support",
+    "label": "Accompagner",
+    "promptText": "Ton approche doit principalement consister à accompagner.",
+    "active": true
+  },
+  {
+    "id": "guide",
+    "label": "Guider",
+    "promptText": "Ton approche doit principalement consister à guider.",
+    "active": true
+  },
+  {
+    "id": "inform",
+    "label": "Informer",
+    "promptText": "Ton approche doit principalement consister à informer.",
+    "active": true
+  },
+  {
+    "id": "advise",
+    "label": "Conseiller",
+    "promptText": "Ton approche doit principalement consister à conseiller.",
+    "active": true
+  },
+  {
+    "id": "analyze",
+    "label": "Analyser",
+    "promptText": "Ton approche doit principalement consister à analyser.",
+    "active": true
+  },
+  {
+    "id": "summarize",
+    "label": "Synthétiser",
+    "promptText": "Ton approche doit principalement consister à synthétiser.",
+    "active": true
+  },
+  {
+    "id": "challenge",
+    "label": "Challenger",
+    "promptText": "Ton approche doit principalement consister à challenger.",
+    "active": true
+  },
+  {
+    "id": "facilitate",
+    "label": "Faciliter",
+    "promptText": "Ton approche doit principalement consister à faciliter.",
+    "active": true
+  },
+  {
+    "id": "reflect",
+    "label": "Faire réfléchir",
+    "promptText": "Ton approche doit principalement consister à faire réfléchir.",
+    "active": true
+  },
+  {
+    "id": "suggest",
+    "label": "Proposer des pistes",
+    "promptText": "Ton approche doit principalement consister à proposer des pistes.",
+    "active": true
+  },
+  {
+    "id": "decide",
+    "label": "Aider à prendre une décision",
+    "promptText": "Ton approche doit principalement consister à aider à prendre une décision.",
+    "active": true
+  }
+]

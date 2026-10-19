@@ -1,0 +1,80 @@
+[
+  {
+    "id": "onboarding-training",
+    "label": "Former de nouveaux collaborateurs",
+    "promptText": "Le résultat sera utilisé pour former de nouveaux collaborateurs.",
+    "active": true
+  },
+  {
+    "id": "onboarding",
+    "label": "Accompagner une prise de poste",
+    "promptText": "Le résultat sera utilisé pour accompagner une prise de poste.",
+    "active": true
+  },
+  {
+    "id": "presentation",
+    "label": "Préparer une présentation",
+    "promptText": "Le résultat sera utilisé pour préparer une présentation.",
+    "active": true
+  },
+  {
+    "id": "procedure",
+    "label": "Expliquer une procédure",
+    "promptText": "Le résultat sera utilisé pour expliquer une procédure.",
+    "active": true
+  },
+  {
+    "id": "meeting",
+    "label": "Préparer une réunion",
+    "promptText": "Le résultat sera utilisé pour préparer une réunion.",
+    "active": true
+  },
+  {
+    "id": "document",
+    "label": "Produire un document professionnel",
+    "promptText": "Le résultat sera utilisé pour produire un document professionnel.",
+    "active": true
+  },
+  {
+    "id": "learning",
+    "label": "Accompagner un apprentissage",
+    "promptText": "Le résultat sera utilisé pour accompagner un apprentissage.",
+    "active": true
+  },
+  {
+    "id": "decision",
+    "label": "Préparer une décision",
+    "promptText": "Le résultat sera utilisé pour préparer une décision.",
+    "active": true
+  },
+  {
+    "id": "difficulty",
+    "label": "Résoudre une difficulté professionnelle",
+    "promptText": "Le résultat sera utilisé pour résoudre une difficulté professionnelle.",
+    "active": true
+  },
+  {
+    "id": "project",
+    "label": "Organiser un projet",
+    "promptText": "Le résultat sera utilisé pour organiser un projet.",
+    "active": true
+  },
+  {
+    "id": "communication",
+    "label": "Communiquer auprès d’un public",
+    "promptText": "Le résultat sera utilisé pour communiquer auprès d’un public.",
+    "active": true
+  },
+  {
+    "id": "assessment",
+    "label": "Préparer une évaluation",
+    "promptText": "Le résultat sera utilisé pour préparer une évaluation.",
+    "active": true
+  },
+  {
+    "id": "analysis",
+    "label": "Analyser une situation professionnelle",
+    "promptText": "Le résultat sera utilisé pour analyser une situation professionnelle.",
+    "active": true
+  }
+]

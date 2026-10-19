@@ -1,0 +1,122 @@
+[
+  {
+    "id": "write-document",
+    "label": "Rédiger un document",
+    "promptText": "Ta tâche consiste à rédiger un document.",
+    "active": true
+  },
+  {
+    "id": "analyze-content",
+    "label": "Analyser un contenu",
+    "promptText": "Ta tâche consiste à analyser un contenu.",
+    "active": true
+  },
+  {
+    "id": "analyze-situation",
+    "label": "Analyser une situation",
+    "promptText": "Ta tâche consiste à analyser une situation.",
+    "active": true
+  },
+  {
+    "id": "solve",
+    "label": "Résoudre un problème",
+    "promptText": "Ta tâche consiste à résoudre un problème.",
+    "active": true
+  },
+  {
+    "id": "brainstorm",
+    "label": "Générer des idées",
+    "promptText": "Ta tâche consiste à générer des idées.",
+    "active": true
+  },
+  {
+    "id": "explain",
+    "label": "Expliquer un concept",
+    "promptText": "Ta tâche consiste à expliquer un concept.",
+    "active": true
+  },
+  {
+    "id": "teach",
+    "label": "Former sur un sujet",
+    "promptText": "Ta tâche consiste à former sur un sujet.",
+    "active": true
+  },
+  {
+    "id": "presentation",
+    "label": "Préparer une présentation",
+    "promptText": "Ta tâche consiste à préparer une présentation.",
+    "active": true
+  },
+  {
+    "id": "article",
+    "label": "Rédiger un article",
+    "promptText": "Ta tâche consiste à rédiger un article.",
+    "active": true
+  },
+  {
+    "id": "email",
+    "label": "Rédiger un email",
+    "promptText": "Ta tâche consiste à rédiger un email.",
+    "active": true
+  },
+  {
+    "id": "outline",
+    "label": "Créer un plan",
+    "promptText": "Ta tâche consiste à créer un plan.",
+    "active": true
+  },
+  {
+    "id": "summarize",
+    "label": "Résumer un document",
+    "promptText": "Ta tâche consiste à résumer un document.",
+    "active": true
+  },
+  {
+    "id": "compare",
+    "label": "Comparer des options",
+    "promptText": "Ta tâche consiste à comparer des options.",
+    "active": true
+  },
+  {
+    "id": "interview",
+    "label": "Préparer un entretien",
+    "promptText": "Ta tâche consiste à préparer un entretien.",
+    "active": true
+  },
+  {
+    "id": "organize",
+    "label": "Organiser des informations",
+    "promptText": "Ta tâche consiste à organiser des informations.",
+    "active": true
+  },
+  {
+    "id": "procedure",
+    "label": "Construire une procédure",
+    "promptText": "Ta tâche consiste à construire une procédure.",
+    "active": true
+  },
+  {
+    "id": "meeting",
+    "label": "Préparer une réunion",
+    "promptText": "Ta tâche consiste à préparer une réunion.",
+    "active": true
+  },
+  {
+    "id": "learning-activity",
+    "label": "Concevoir une activité pédagogique",
+    "promptText": "Ta tâche consiste à concevoir une activité pédagogique.",
+    "active": true
+  },
+  {
+    "id": "feedback",
+    "label": "Donner un retour critique",
+    "promptText": "Ta tâche consiste à donner un retour critique.",
+    "active": true
+  },
+  {
+    "id": "decision",
+    "label": "Aider à prendre une décision",
+    "promptText": "Ta tâche consiste à aider à prendre une décision.",
+    "active": true
+  }
+]

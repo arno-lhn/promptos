@@ -1,0 +1,20 @@
+[
+  {
+    "id": "beginner",
+    "label": "Débutant",
+    "promptText": "Je débute sur ce sujet. Adapte tes explications à mon niveau et ne suppose pas que je maîtrise déjà les notions techniques.",
+    "active": true
+  },
+  {
+    "id": "intermediate",
+    "label": "Intermédiaire",
+    "promptText": "Je possède quelques connaissances sur ce sujet, mais certaines notions nécessitent encore des explications.",
+    "active": true
+  },
+  {
+    "id": "advanced",
+    "label": "Avancé",
+    "promptText": "Je possède déjà de bonnes connaissances sur ce sujet. Tu peux utiliser des notions techniques adaptées à ce niveau.",
+    "active": true
+  }
+]

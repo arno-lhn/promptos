@@ -1,0 +1,86 @@
+[
+  {
+    "id": "educational",
+    "label": "Pédagogique",
+    "promptText": "Adopte un ton pédagogique.",
+    "active": true
+  },
+  {
+    "id": "professional",
+    "label": "Professionnel",
+    "promptText": "Adopte un ton professionnel.",
+    "active": true
+  },
+  {
+    "id": "neutral",
+    "label": "Neutre",
+    "promptText": "Adopte un ton neutre.",
+    "active": true
+  },
+  {
+    "id": "kind",
+    "label": "Bienveillant",
+    "promptText": "Adopte un ton bienveillant.",
+    "active": true
+  },
+  {
+    "id": "encouraging",
+    "label": "Encourageant",
+    "promptText": "Adopte un ton encourageant.",
+    "active": true
+  },
+  {
+    "id": "formal",
+    "label": "Formel",
+    "promptText": "Adopte un ton formel.",
+    "active": true
+  },
+  {
+    "id": "informal",
+    "label": "Informel",
+    "promptText": "Adopte un ton informel.",
+    "active": true
+  },
+  {
+    "id": "dynamic",
+    "label": "Dynamique",
+    "promptText": "Adopte un ton dynamique.",
+    "active": true
+  },
+  {
+    "id": "serious",
+    "label": "Sérieux",
+    "promptText": "Adopte un ton sérieux.",
+    "active": true
+  },
+  {
+    "id": "direct",
+    "label": "Direct",
+    "promptText": "Adopte un ton direct.",
+    "active": true
+  },
+  {
+    "id": "empathetic",
+    "label": "Empathique",
+    "promptText": "Adopte un ton empathique.",
+    "active": true
+  },
+  {
+    "id": "factual",
+    "label": "Factuel",
+    "promptText": "Adopte un ton factuel.",
+    "active": true
+  },
+  {
+    "id": "conversational",
+    "label": "Conversationnel",
+    "promptText": "Adopte un ton conversationnel.",
+    "active": true
+  },
+  {
+    "id": "institutional",
+    "label": "Institutionnel",
+    "promptText": "Adopte un ton institutionnel.",
+    "active": true
+  }
+]

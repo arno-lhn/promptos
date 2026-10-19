@@ -1,0 +1,110 @@
+[
+  {
+    "id": "text",
+    "label": "Texte libre",
+    "promptText": "Présente le résultat sous forme de texte libre.",
+    "active": true
+  },
+  {
+    "id": "blog",
+    "label": "Article de blog",
+    "promptText": "Présente le résultat sous forme d’article de blog.",
+    "active": true
+  },
+  {
+    "id": "email",
+    "label": "Email",
+    "promptText": "Présente le résultat sous forme d’email.",
+    "active": true
+  },
+  {
+    "id": "list",
+    "label": "Liste structurée",
+    "promptText": "Présente le résultat sous forme de liste structurée.",
+    "active": true
+  },
+  {
+    "id": "comparison",
+    "label": "Tableau comparatif",
+    "promptText": "Présente le résultat sous forme de tableau comparatif.",
+    "active": true
+  },
+  {
+    "id": "guide",
+    "label": "Guide étape par étape",
+    "promptText": "Présente le résultat sous forme de guide étape par étape.",
+    "active": true
+  },
+  {
+    "id": "procedure",
+    "label": "Procédure",
+    "promptText": "Présente le résultat sous forme de procédure.",
+    "active": true
+  },
+  {
+    "id": "summary",
+    "label": "Fiche synthétique",
+    "promptText": "Présente le résultat sous forme de fiche synthétique.",
+    "active": true
+  },
+  {
+    "id": "training",
+    "label": "Support de formation",
+    "promptText": "Présente le résultat sous forme de support de formation.",
+    "active": true
+  },
+  {
+    "id": "presentation",
+    "label": "Présentation",
+    "promptText": "Présente le résultat sous forme de présentation.",
+    "active": true
+  },
+  {
+    "id": "outline",
+    "label": "Plan détaillé",
+    "promptText": "Présente le résultat sous forme de plan détaillé.",
+    "active": true
+  },
+  {
+    "id": "faq",
+    "label": "FAQ",
+    "promptText": "Présente le résultat sous forme de FAQ.",
+    "active": true
+  },
+  {
+    "id": "social",
+    "label": "Publication pour les réseaux sociaux",
+    "promptText": "Présente le résultat sous forme de publication pour les réseaux sociaux.",
+    "active": true
+  },
+  {
+    "id": "newsletter",
+    "label": "Newsletter",
+    "promptText": "Présente le résultat sous forme de newsletter.",
+    "active": true
+  },
+  {
+    "id": "video",
+    "label": "Script vidéo",
+    "promptText": "Présente le résultat sous forme de script vidéo.",
+    "active": true
+  },
+  {
+    "id": "minutes",
+    "label": "Compte rendu",
+    "promptText": "Présente le résultat sous forme de compte rendu.",
+    "active": true
+  },
+  {
+    "id": "action-plan",
+    "label": "Plan d’action",
+    "promptText": "Présente le résultat sous forme de plan d’action.",
+    "active": true
+  },
+  {
+    "id": "checklist",
+    "label": "Checklist",
+    "promptText": "Présente le résultat sous forme de checklist.",
+    "active": true
+  }
+]

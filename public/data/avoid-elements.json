@@ -1,0 +1,86 @@
+[
+  {
+    "id": "jargon",
+    "label": "Jargon technique non expliqué",
+    "promptText": "le jargon technique non expliqué",
+    "active": true
+  },
+  {
+    "id": "complexity",
+    "label": "Explications trop complexes",
+    "promptText": "les explications trop complexes",
+    "active": true
+  },
+  {
+    "id": "advanced",
+    "label": "Exemples trop avancés",
+    "promptText": "les exemples trop avancés",
+    "active": true
+  },
+  {
+    "id": "generic",
+    "label": "Réponses trop générales",
+    "promptText": "les réponses trop générales",
+    "active": true
+  },
+  {
+    "id": "repetition",
+    "label": "Répétitions inutiles",
+    "promptText": "les répétitions inutiles",
+    "active": true
+  },
+  {
+    "id": "unverified",
+    "label": "Informations non vérifiées",
+    "promptText": "les informations non vérifiées",
+    "active": true
+  },
+  {
+    "id": "unsourced",
+    "label": "Affirmations non sourcées",
+    "promptText": "les affirmations non sourcées",
+    "active": true
+  },
+  {
+    "id": "promotion",
+    "label": "Ton promotionnel",
+    "promptText": "le ton promotionnel",
+    "active": true
+  },
+  {
+    "id": "off-topic",
+    "label": "Développements hors sujet",
+    "promptText": "les développements hors sujet",
+    "active": true
+  },
+  {
+    "id": "length",
+    "label": "Réponses inutilement longues",
+    "promptText": "les réponses inutilement longues",
+    "active": true
+  },
+  {
+    "id": "abstract",
+    "label": "Théories trop abstraites",
+    "promptText": "les théories trop abstraites",
+    "active": true
+  },
+  {
+    "id": "impractical",
+    "label": "Exemples sans application concrète",
+    "promptText": "les exemples sans application concrète",
+    "active": true
+  },
+  {
+    "id": "acronyms",
+    "label": "Acronymes non expliqués",
+    "promptText": "les acronymes non expliqués",
+    "active": true
+  },
+  {
+    "id": "categorical",
+    "label": "Conclusions trop catégoriques",
+    "promptText": "les conclusions trop catégoriques",
+    "active": true
+  }
+]
