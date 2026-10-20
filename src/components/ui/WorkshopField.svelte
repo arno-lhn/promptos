@@ -2,8 +2,9 @@
   import HelpPanel from './HelpPanel.svelte';
   import { getOptions } from '../../lib/data-loader.ts';
   import type { FieldDefinition } from '../../lib/prompt-types.ts';
-  let { field, value, onchange }: {
+  let { field, sectionId, value, onchange }: {
     field: FieldDefinition;
+    sectionId: string;
     value: string | string[];
     onchange: (value: string | string[]) => void;
   } = $props();
@@ -23,8 +24,8 @@
         {#each options as option (option.id)}<option value={option.id}>{option.label}</option>{/each}
       </select>
     {:else}
-      <textarea id={field.id} rows="4" value={typeof value === 'string' ? value : ''} placeholder={field.placeholder} oninput={event => onchange(event.currentTarget.value)}></textarea>
-      <span class="field-hint">Vos mots sont conservés, sans reformulation.</span>
+      <textarea id={field.id} rows="4" aria-describedby={`${field.id}-hint`} value={typeof value === 'string' ? value : ''} placeholder={field.placeholder} oninput={event => onchange(event.currentTarget.value)}></textarea>
+      <span class="field-hint" id={`${field.id}-hint`}>Vos mots sont conservés, sans reformulation.</span>
     {/if}
   {:else}
     <fieldset>
@@ -47,5 +48,5 @@
       {/if}
     </fieldset>
   {/if}
-  <HelpPanel id={field.id} text={field.help} label={field.label} />
+  <HelpPanel id={field.id} group={sectionId} text={field.help} label={field.label} />
 </div>

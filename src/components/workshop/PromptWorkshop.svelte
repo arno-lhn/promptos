@@ -87,7 +87,7 @@
           <div class="section-heading"><span class="section-number">{String(index + 1).padStart(2, '0')}</span><div><h2 id={`${section.id}-title`}>{section.title}</h2><p>{section.description}</p></div><span class="optional-label">Facultatif</span></div>
           <div class="section-fields">
             {#each section.fields as field (field.id)}
-              <WorkshopField {field} value={formState[field.id]} onchange={value => update(field.id, value)} />
+              <WorkshopField {field} sectionId={section.id} value={formState[field.id]} onchange={value => update(field.id, value)} />
             {/each}
           </div>
           {#if section.note}<p class="section-note"><span aria-hidden="true">↳</span> {section.note}</p>{/if}

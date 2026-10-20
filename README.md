@@ -1,4 +1,4 @@
-# PromptOS — Version 1
+# PromptOS — Version 1.1
 
 Atelier pédagogique de construction de prompts, développé avec **Astro 7, Svelte 5 et TypeScript**. L’application assemble de façon déterministe les choix et les mots de l’utilisateur. Elle ne contacte aucune IA et ne nécessite ni compte, ni backend, ni base de données.
 
@@ -111,4 +111,4 @@ Après `npm run build`, copier **tout le contenu de `dist/`** sur un hébergemen
 
 La configuration actuelle suppose un hébergement à la racine d’un domaine. Un hébergement dans un sous-dossier demanderait d’adapter `base` et les liens internes.
 
-Aucun déploiement, push ou changement des paramètres GitHub n’a été effectué dans cette livraison. Les niveaux 2 et 3, l’IA intégrée, l’authentification, la persistance et l’administration restent hors périmètre.
+Les niveaux 2 et 3, l’IA intégrée, l’authentification, la persistance et l’administration restent hors périmètre.
