@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PersonalizationWorkshop from '../components/personalization/PersonalizationWorkshop.svelte';
+---
+<BaseLayout title="Créer mes instructions personnalisées">
+  <noscript><div class="noscript-message">Activez JavaScript pour sélectionner vos préférences et assembler vos instructions. Aucune saisie n’est envoyée à un service externe.</div></noscript>
+  <PersonalizationWorkshop client:load />
+</BaseLayout>

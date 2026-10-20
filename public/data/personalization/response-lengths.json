@@ -1,0 +1,32 @@
+[
+  {
+    "id": "minimal",
+    "label": "Réponses très synthétiques",
+    "promptText": "Fournis des réponses très synthétiques, limitées aux éléments essentiels.",
+    "active": true
+  },
+  {
+    "id": "concise",
+    "label": "Réponses concises",
+    "promptText": "Fournis des réponses concises, avec les précisions nécessaires pour être utile.",
+    "active": true
+  },
+  {
+    "id": "balanced",
+    "label": "Réponses équilibrées",
+    "promptText": "Équilibre la brièveté et les explications utiles dans tes réponses.",
+    "active": true
+  },
+  {
+    "id": "detailed",
+    "label": "Réponses détaillées",
+    "promptText": "Fournis des réponses détaillées et développe les points nécessaires à la compréhension.",
+    "active": true
+  },
+  {
+    "id": "thorough",
+    "label": "Réponses très approfondies",
+    "promptText": "Fournis des réponses très approfondies en explicitant les raisonnements utiles, les exemples et les limites.",
+    "active": true
+  }
+]

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount, tick } from 'svelte';
-  import { sections } from '../../lib/data-loader.ts';
+  import { sections, getOptions } from '../../lib/data-loader.ts';
   import { buildPrompt, isResultStale } from '../../lib/prompt-builder.ts';
   import { createEmptyState, type FieldId, type FormState } from '../../lib/prompt-types.ts';
   import WorkshopField from '../ui/WorkshopField.svelte';
@@ -86,7 +86,7 @@
           <div class="section-heading"><span class="section-number">{String(index + 1).padStart(2, '0')}</span><div><h2 id={`${section.id}-title`}>{section.title}</h2><p>{section.description}</p></div><span class="optional-label">Facultatif</span></div>
           <div class="section-fields">
             {#each section.fields as field (field.id)}
-              <WorkshopField {field} sectionId={section.id} value={formState[field.id]} onchange={value => update(field.id, value)} />
+              <WorkshopField {field} sectionId={section.id} options={getOptions(field.id)} value={formState[field.id]} onchange={value => update(field.id, value)} />
             {/each}
           </div>
           {#if section.note}<p class="section-note"><span aria-hidden="true">↳</span> {section.note}</p>{/if}

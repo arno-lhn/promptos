@@ -1,0 +1,50 @@
+[
+  {
+    "id": "headings",
+    "label": "Utiliser des titres et sous-titres",
+    "promptText": "Utilise des titres et sous-titres lorsque cela facilite la lecture.",
+    "active": true
+  },
+  {
+    "id": "steps",
+    "label": "Structurer les procédures en étapes",
+    "promptText": "Structure les procédures en étapes ordonnées.",
+    "active": true
+  },
+  {
+    "id": "lists",
+    "label": "Utiliser des listes lorsque cela facilite la lecture",
+    "promptText": "Utilise des listes lorsque cela facilite la lecture.",
+    "active": true
+  },
+  {
+    "id": "tables",
+    "label": "Utiliser des tableaux pour comparer des informations",
+    "promptText": "Utilise des tableaux pour comparer des informations lorsque cela est pertinent.",
+    "active": true
+  },
+  {
+    "id": "examples",
+    "label": "Ajouter des exemples concrets",
+    "promptText": "Ajoute des exemples concrets lorsqu’ils facilitent la compréhension.",
+    "active": true
+  },
+  {
+    "id": "definitions",
+    "label": "Définir les termes techniques",
+    "promptText": "Définis les termes techniques lorsqu’ils apparaissent pour la première fois.",
+    "active": true
+  },
+  {
+    "id": "answer-first",
+    "label": "Commencer par une réponse directe",
+    "promptText": "Commence par une réponse directe à ma demande.",
+    "active": true
+  },
+  {
+    "id": "summary",
+    "label": "Terminer par une synthèse lorsque cela est utile",
+    "promptText": "Termine par une synthèse lorsque cela est utile et apporte une valeur supplémentaire.",
+    "active": true
+  }
+]

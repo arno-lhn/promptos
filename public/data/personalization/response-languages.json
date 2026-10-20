@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fr",
+    "label": "Français",
+    "promptText": "Réponds en français.",
+    "active": true
+  },
+  {
+    "id": "en",
+    "label": "Anglais",
+    "promptText": "Réponds en anglais.",
+    "active": true
+  },
+  {
+    "id": "es",
+    "label": "Espagnol",
+    "promptText": "Réponds en espagnol.",
+    "active": true
+  },
+  {
+    "id": "de",
+    "label": "Allemand",
+    "promptText": "Réponds en allemand.",
+    "active": true
+  },
+  {
+    "id": "it",
+    "label": "Italien",
+    "promptText": "Réponds en italien.",
+    "active": true
+  },
+  {
+    "id": "user-language",
+    "label": "Répondre dans la langue utilisée par l’utilisateur",
+    "promptText": "Réponds dans la langue que j’utilise pour formuler ma demande.",
+    "active": true
+  }
+]

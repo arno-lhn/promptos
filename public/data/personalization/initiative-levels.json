@@ -1,0 +1,26 @@
+[
+  {
+    "id": "request-only",
+    "label": "Répondre uniquement à la demande formulée",
+    "promptText": "Limite ta réponse au besoin formulé ; ne lance pas de tâches supplémentaires.",
+    "active": true
+  },
+  {
+    "id": "improvements",
+    "label": "Suggérer ponctuellement des améliorations utiles",
+    "promptText": "Suggère ponctuellement des améliorations utiles liées à ma demande.",
+    "active": true
+  },
+  {
+    "id": "alternatives",
+    "label": "Proposer des alternatives lorsqu’elles apportent une réelle valeur",
+    "promptText": "Propose des alternatives lorsqu’elles apportent une réelle valeur à la résolution de ma demande.",
+    "active": true
+  },
+  {
+    "id": "omissions",
+    "label": "Signaler les points importants qui pourraient avoir été oubliés",
+    "promptText": "Signale les points importants qui pourraient avoir été oubliés dans ma demande.",
+    "active": true
+  }
+]

@@ -1,0 +1,203 @@
+[
+  {
+    "id": "assistant-posture",
+    "title": "Comportement de l’assistant",
+    "promptTitle": "COMPORTEMENT",
+    "description": "Définissez la posture générale et les comportements que vous attendez de votre assistant.",
+    "fields": [
+      {
+        "id": "posture",
+        "label": "Quelle posture principale souhaitez-vous ?",
+        "type": "select",
+        "help": "La posture donne une orientation générale. Les comportements précisent des actions observables : expliquer avec patience, signaler une erreur ou proposer une amélioration.",
+        "catalog": "postures",
+        "placeholder": "Aucun choix — facultatif"
+      },
+      {
+        "id": "behaviors",
+        "label": "Quels comportements souhaitez-vous ?",
+        "type": "checkbox",
+        "help": "Choisissez les comportements qui vous seront utiles. Plusieurs peuvent se compléter ; aucune sélection n’est nécessaire pour continuer.",
+        "catalog": "behaviors",
+        "layout": "list"
+      },
+      {
+        "id": "disagreement",
+        "label": "Comment aborder les désaccords ?",
+        "type": "radio",
+        "help": "Cette préférence précise la façon d’aborder un désaccord. Elle n’oblige pas l’assistant à être en désaccord ni à vous approuver.",
+        "catalog": "disagreements",
+        "layout": "list"
+      }
+    ]
+  },
+  {
+    "id": "communication",
+    "title": "Ton et communication",
+    "promptTitle": "COMMUNICATION",
+    "description": "Choisissez la manière de vous répondre : ton, vocabulaire, détail et présentation.",
+    "fields": [
+      {
+        "id": "tone",
+        "label": "Quel ton principal préférez-vous ?",
+        "type": "select",
+        "help": "Le ton concerne la relation avec le lecteur. Il est distinct du niveau de langage et de la longueur : une réponse peut être professionnelle, accessible et détaillée.",
+        "catalog": "tones",
+        "placeholder": "Aucun choix — facultatif"
+      },
+      {
+        "id": "languageLevel",
+        "label": "Quel niveau de langage vous convient ?",
+        "type": "radio",
+        "help": "Le vocabulaire peut être accessible ou technique, indépendamment du ton employé. Choisissez selon vos besoins de compréhension.",
+        "catalog": "language-levels",
+        "layout": "list"
+      },
+      {
+        "id": "responseLength",
+        "label": "Quel niveau de détail souhaitez-vous ?",
+        "type": "radio",
+        "help": "La longueur et la méthode d’explication sont deux préférences différentes. Une réponse concise peut présenter une procédure étape par étape.",
+        "catalog": "response-lengths",
+        "layout": "list"
+      },
+      {
+        "id": "presentation",
+        "label": "Comment présenter les réponses ?",
+        "type": "checkbox",
+        "help": "Ces préférences s’appliquent lorsque la forme demandée s’y prête. Un tableau aide à comparer ; une liste d’étapes aide à suivre une procédure.",
+        "catalog": "presentation-preferences",
+        "layout": "list"
+      },
+      {
+        "id": "responseLanguage",
+        "label": "Dans quelle langue répondre ?",
+        "type": "select",
+        "help": "Cette préférence oriente la langue habituelle de l’assistant. Aucune langue n’est imposée si vous laissez ce champ vide.",
+        "catalog": "response-languages",
+        "placeholder": "Aucun choix — facultatif"
+      }
+    ]
+  },
+  {
+    "id": "work-method",
+    "title": "Méthode de travail",
+    "promptTitle": "MÉTHODE DE TRAVAIL",
+    "description": "Définissez comment l’assistant aborde les demandes et vous accompagne dans leur résolution.",
+    "fields": [
+      {
+        "id": "clarification",
+        "label": "Que faire si votre demande est imprécise ?",
+        "type": "radio",
+        "help": "Cette préférence s’applique lorsqu’une demande manque de précision. Elle définit comment avancer, sans imposer de questions pour les demandes déjà claires.",
+        "catalog": "clarification-strategies",
+        "layout": "list"
+      },
+      {
+        "id": "explanationMethods",
+        "label": "Quelles méthodes d’explication privilégier ?",
+        "type": "checkbox",
+        "help": "La méthode organise les explications ; le ton définit la manière de s’adresser à vous. Vous pouvez associer une méthode progressive à des réponses concises.",
+        "catalog": "explanation-methods",
+        "layout": "list"
+      },
+      {
+        "id": "workApproach",
+        "label": "Quelle approche privilégier ?",
+        "type": "select",
+        "help": "Cette préférence indique votre usage habituel. Elle ne remplace pas la tâche précise que vous formulerez dans chaque conversation.",
+        "catalog": "work-approaches",
+        "placeholder": "Aucun choix — facultatif"
+      },
+      {
+        "id": "initiative",
+        "label": "Quel niveau d’initiative souhaitez-vous ?",
+        "type": "radio",
+        "help": "Ce choix fixe la place des suggestions complémentaires. Les initiatives restent liées au besoin exprimé ; aucune action extérieure n’est effectuée par PromptOS.",
+        "catalog": "initiative-levels",
+        "layout": "list"
+      }
+    ]
+  },
+  {
+    "id": "reliability",
+    "title": "Fiabilité et vérification",
+    "promptTitle": "FIABILITÉ",
+    "description": "Exprimez vos attentes en matière de prudence, de sources et de vérification.",
+    "fields": [
+      {
+        "id": "uncertainty",
+        "label": "Comment traiter les incertitudes ?",
+        "type": "checkbox",
+        "help": "Ces instructions encouragent la prudence, mais ne garantissent pas l’exactitude. Gardez un regard critique sur les réponses et vérifiez les informations importantes.",
+        "catalog": "uncertainty-rules",
+        "layout": "list"
+      },
+      {
+        "id": "sources",
+        "label": "Quelles préférences pour les sources ?",
+        "type": "checkbox",
+        "help": "Les capacités de recherche varient selon les assistants. Demander des sources n’accorde pas un accès au Web. Examinez les références et distinguez ce qui a été vérifié de ce qui reste à contrôler.",
+        "catalog": "source-preferences",
+        "layout": "list"
+      },
+      {
+        "id": "verification",
+        "label": "Quelle démarche de vérification privilégier ?",
+        "type": "radio",
+        "help": "La vérification dépend des outils réellement disponibles. Les instructions doivent prévoir les limites de l’assistant, plutôt que supposer un accès systématique à Internet.",
+        "catalog": "verification-strategies",
+        "layout": "list"
+      }
+    ]
+  },
+  {
+    "id": "personal-preferences",
+    "title": "Préférences personnelles et limites",
+    "promptTitle": "MES PRÉFÉRENCES",
+    "description": "Précisez votre niveau, votre contexte habituel et les éléments que vous souhaitez éviter.",
+    "note": "Évitez d’inscrire des mots de passe, des informations bancaires, des données médicales ou d’autres informations sensibles dans des instructions destinées à être réutilisées. Les saisies restent dans cette page et sont perdues à son rechargement.",
+    "fields": [
+      {
+        "id": "digitalLevel",
+        "label": "Quel est votre niveau avec les outils numériques ?",
+        "type": "radio",
+        "help": "Il s’agit de votre propre familiarité avec les outils numériques, et non du niveau d’un public auquel vous pourriez vous adresser.",
+        "catalog": "digital-levels",
+        "layout": "list"
+      },
+      {
+        "id": "avoidElements",
+        "label": "Quels comportements souhaitez-vous éviter ?",
+        "type": "checkbox",
+        "help": "Ces préférences précisent des limites de forme et de comportement. Éviter une longueur inutile n’interdit pas les explications détaillées nécessaires à votre compréhension.",
+        "catalog": "avoid-elements",
+        "layout": "list"
+      },
+      {
+        "id": "usageContext",
+        "label": "Dans quel contexte utilisez-vous principalement votre IA ?",
+        "type": "textarea",
+        "help": "Décrivez vos usages habituels. Ce texte est repris sans reformulation et peut suffire à lui seul pour générer vos instructions.",
+        "placeholder": "Par exemple : je suis formateur et j’utilise principalement l’IA pour préparer des séances pédagogiques, rédiger des documents et comprendre de nouveaux outils.",
+        "promptPrefix": "Mon contexte d’utilisation :"
+      },
+      {
+        "id": "extraPreferences",
+        "label": "Souhaitez-vous ajouter d’autres préférences ?",
+        "type": "textarea",
+        "help": "Ajoutez vos préférences avec vos mots. Elles seront intégrées telles quelles ; PromptOS ne les interprète pas et ne résout pas les éventuelles contradictions de votre texte.",
+        "placeholder": "Par exemple : lorsque tu m’expliques une procédure informatique, indique les étapes dans l’ordre et précise les éventuelles difficultés.",
+        "promptPrefix": "Mes préférences complémentaires :"
+      },
+      {
+        "id": "extraAvoid",
+        "label": "Y a-t-il des comportements ou des éléments supplémentaires que vous souhaitez éviter ?",
+        "type": "textarea",
+        "help": "Précisez les limites qui comptent pour vous. Votre formulation est conservée et présentée comme une préférence personnelle.",
+        "placeholder": "Éléments que vous souhaitez éviter…",
+        "promptPrefix": "Autres éléments que je souhaite éviter :"
+      }
+    ]
+  }
+]

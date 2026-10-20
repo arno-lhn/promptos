@@ -1,14 +1,14 @@
 <script lang="ts">
   import HelpPanel from './HelpPanel.svelte';
-  import { getOptions } from '../../lib/data-loader.ts';
-  import type { FieldDefinition } from '../../lib/prompt-types.ts';
-  let { field, sectionId, value, onchange }: {
-    field: FieldDefinition;
+  import type { PromptOption } from '../../lib/prompt-types.ts';
+  let { field, sectionId, value, onchange, options: suppliedOptions }: {
+    field: { id: string; label: string; type: 'select' | 'radio' | 'checkbox' | 'textarea'; help: string; placeholder?: string; layout?: 'list' };
     sectionId: string;
     value: string | string[];
     onchange: (value: string | string[]) => void;
+    options?: PromptOption[];
   } = $props();
-  const options = $derived(getOptions(field.id));
+  const options = $derived(suppliedOptions ?? []);
   function toggle(id: string, checked: boolean) {
     const current = Array.isArray(value) ? value : [];
     onchange(checked ? [...current, id] : current.filter(item => item !== id));
@@ -30,7 +30,7 @@
   {:else}
     <fieldset>
       <legend class="field-label">{field.label}</legend>
-      <div class="choice-group" class:long-choices={field.id === 'sourceRequirements'}>
+      <div class="choice-group" class:long-choices={field.id === 'sourceRequirements' || field.layout === 'list'}>
         {#each options as option (option.id)}
           {@const checked = Array.isArray(value) ? value.includes(option.id) : value === option.id}
           <label class="choice" class:selected={checked}>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "professional",
+    "label": "Professionnel",
+    "promptText": "Utilise un ton professionnel.",
+    "active": true
+  },
+  {
+    "id": "warm",
+    "label": "Chaleureux",
+    "promptText": "Utilise un ton chaleureux.",
+    "active": true
+  },
+  {
+    "id": "neutral",
+    "label": "Neutre",
+    "promptText": "Utilise un ton neutre.",
+    "active": true
+  },
+  {
+    "id": "direct",
+    "label": "Direct",
+    "promptText": "Utilise un ton direct.",
+    "active": true
+  },
+  {
+    "id": "formal",
+    "label": "Formel",
+    "promptText": "Utilise un ton formel.",
+    "active": true
+  },
+  {
+    "id": "conversational",
+    "label": "Conversationnel",
+    "promptText": "Utilise un ton conversationnel.",
+    "active": true
+  },
+  {
+    "id": "encouraging",
+    "label": "Encourageant",
+    "promptText": "Utilise un ton encourageant.",
+    "active": true
+  },
+  {
+    "id": "restrained",
+    "label": "Sobre",
+    "promptText": "Utilise un ton sobre.",
+    "active": true
+  }
+]

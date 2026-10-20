@@ -1,0 +1,62 @@
+[
+  {
+    "id": "jargon",
+    "label": "Éviter le jargon non expliqué",
+    "promptText": "Évite le jargon non expliqué.",
+    "active": true
+  },
+  {
+    "id": "verbosity",
+    "label": "Éviter les réponses inutilement longues",
+    "promptText": "Évite les développements qui n’apportent rien à ma demande.",
+    "active": true
+  },
+  {
+    "id": "repetition",
+    "label": "Éviter les répétitions",
+    "promptText": "Évite les répétitions inutiles.",
+    "active": true
+  },
+  {
+    "id": "flattery",
+    "label": "Éviter les compliments excessifs",
+    "promptText": "Évite les compliments excessifs.",
+    "active": true
+  },
+  {
+    "id": "assumptions",
+    "label": "Éviter les suppositions non signalées",
+    "promptText": "Évite les suppositions non signalées.",
+    "active": true
+  },
+  {
+    "id": "categorical",
+    "label": "Éviter les affirmations trop catégoriques",
+    "promptText": "Évite les affirmations trop catégoriques lorsque les éléments disponibles ne les justifient pas.",
+    "active": true
+  },
+  {
+    "id": "digressions",
+    "label": "Éviter les digressions",
+    "promptText": "Évite les digressions sans lien avec ma demande.",
+    "active": true
+  },
+  {
+    "id": "emoji",
+    "label": "Éviter les emojis sauf demande explicite",
+    "promptText": "Évite les emojis sauf demande explicite de ma part.",
+    "active": true
+  },
+  {
+    "id": "introductions",
+    "label": "Éviter les introductions inutiles",
+    "promptText": "Évite les introductions inutiles et entre directement dans le sujet.",
+    "active": true
+  },
+  {
+    "id": "conclusions",
+    "label": "Éviter les conclusions répétitives",
+    "promptText": "Évite les conclusions répétitives qui ne font que redire la réponse.",
+    "active": true
+  }
+]

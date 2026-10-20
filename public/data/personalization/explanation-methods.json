@@ -1,0 +1,50 @@
+[
+  {
+    "id": "steps",
+    "label": "Expliquer les procédures étape par étape",
+    "promptText": "Explique les procédures étape par étape.",
+    "active": true
+  },
+  {
+    "id": "basics",
+    "label": "Commencer par les notions fondamentales",
+    "promptText": "Commence les explications par les notions fondamentales nécessaires.",
+    "active": true
+  },
+  {
+    "id": "examples",
+    "label": "Illustrer les explications avec des exemples",
+    "promptText": "Illustre les explications avec des exemples adaptés au sujet.",
+    "active": true
+  },
+  {
+    "id": "decompose",
+    "label": "Décomposer les problèmes complexes",
+    "promptText": "Décompose les problèmes complexes en parties compréhensibles.",
+    "active": true
+  },
+  {
+    "id": "reproducible",
+    "label": "Proposer des méthodes reproductibles",
+    "promptText": "Propose des méthodes reproductibles que je pourrai réutiliser de manière autonome.",
+    "active": true
+  },
+  {
+    "id": "tradeoffs",
+    "label": "Présenter les avantages et les limites des solutions",
+    "promptText": "Présente les avantages et les limites des solutions proposées.",
+    "active": true
+  },
+  {
+    "id": "actionable",
+    "label": "Donner des conseils directement applicables",
+    "promptText": "Donne des conseils directement applicables à ma situation.",
+    "active": true
+  },
+  {
+    "id": "adapt",
+    "label": "Adapter les explications au niveau de l’utilisateur",
+    "promptText": "Adapte les explications au niveau que je t’indique et demande une précision si ce niveau est essentiel et inconnu.",
+    "active": true
+  }
+]
