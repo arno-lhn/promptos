@@ -1,0 +1,65 @@
+{
+  "order": 9,
+  "id": "comparaison-solutions",
+  "slug": "comparaison-solutions",
+  "title": "Comparer plusieurs solutions",
+  "category": "analyse",
+  "description": "Comparer des options à partir de critères explicites et de données disponibles.",
+  "need": "Je dois choisir entre plusieurs solutions. Je souhaite comprendre leurs avantages et leurs limites sans recevoir une recommandation arbitraire.",
+  "prompt": "Aide-moi à comparer les solutions suivantes pour [BESOIN] :\n[SOLUTIONS]\n\nMon contexte et mes contraintes sont [CONTEXTE]. Les critères de choix importants sont [CRITERES]. Voici les informations dont je dispose :\n[DONNEES]\n\nConstruis une comparaison à partir de ces éléments. Pour chaque critère, distingue les données fournies, les déductions et les informations manquantes. N’invente pas de prix, de fonction, de performance ou de résultat. Si des données actuelles sont nécessaires, indique lesquelles vérifier ; ne prétends pas avoir effectué une recherche sans outil disponible.\n\nPrésente un tableau comparatif, puis les avantages, les limites et les conditions d’usage de chaque solution. Si tu proposes une préférence, justifie-la au regard de mes critères et précise ce qui pourrait la faire changer.\n\nTermine par les questions à résoudre et une prochaine étape concrète pour décider.",
+  "explanation": [
+    {
+      "title": "Besoin",
+      "text": "Le besoin et le contexte empêchent de désigner une solution comme la meilleure dans toutes les situations."
+    },
+    {
+      "title": "Critères",
+      "text": "Les critères rendent la comparaison explicite et permettent de discuter la recommandation."
+    },
+    {
+      "title": "Données",
+      "text": "Le prompt distingue informations connues et informations à vérifier, notamment celles qui peuvent évoluer."
+    },
+    {
+      "title": "Décision",
+      "text": "La conclusion est conditionnelle et laisse à l’utilisateur le choix final."
+    }
+  ],
+  "adaptations": [
+    "Limiter la comparaison à deux ou trois options.",
+    "Classer vos critères par importance.",
+    "Ajouter un budget, un délai ou une contrainte technique.",
+    "Demander une comparaison sans recommandation finale."
+  ],
+  "variables": [
+    {
+      "name": "BESOIN",
+      "description": "Le problème concret à résoudre."
+    },
+    {
+      "name": "SOLUTIONS",
+      "description": "Les options envisagées."
+    },
+    {
+      "name": "CONTEXTE",
+      "description": "Vos contraintes et votre situation."
+    },
+    {
+      "name": "CRITERES",
+      "description": "Les dimensions à comparer, par exemple coût, simplicité et maintenance."
+    },
+    {
+      "name": "DONNEES",
+      "description": "Les informations connues et leurs sources éventuelles."
+    }
+  ],
+  "keywords": [
+    "comparaison",
+    "solutions",
+    "critères",
+    "choix",
+    "décision"
+  ],
+  "tool": "Un assistant IA capable de traiter du texte.",
+  "active": true
+}

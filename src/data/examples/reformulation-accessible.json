@@ -1,0 +1,60 @@
+{
+  "order": 2,
+  "id": "reformulation-accessible",
+  "slug": "reformulation-accessible",
+  "title": "Reformuler un texte pour le rendre accessible",
+  "category": "redaction",
+  "description": "Rendre un texte plus compréhensible en conservant son sens et ses informations.",
+  "need": "J’ai un texte trop complexe pour ses destinataires. Je souhaite le rendre plus facile à lire sans perdre les informations nécessaires.",
+  "prompt": "Agis comme un rédacteur spécialisé dans la clarté des documents.\n\nReformule le texte ci-dessous pour [PUBLIC], dont le niveau de connaissance du sujet est [NIVEAU]. L’objectif du document est [OBJECTIF].\n\nTexte à reformuler :\n[TEXTE]\n\nConserve les faits, les dates, les noms et les consignes présents dans le texte. N’ajoute pas d’information non fournie. Utilise des phrases courtes, un vocabulaire courant et une idée principale par paragraphe. Explique les termes techniques indispensables sans modifier leur sens.\n\nPréserve les nuances importantes : une possibilité ne doit pas devenir une certitude, ni un conseil une obligation. Si un passage est ambigu, signale-le plutôt que de le résoudre arbitrairement.\n\nPrésente d’abord la version reformulée, puis une courte liste des simplifications effectuées et des points qui nécessitent une validation humaine.",
+  "explanation": [
+    {
+      "title": "Public",
+      "text": "Le public et son niveau permettent d’ajuster le vocabulaire sans confondre accessibilité et simplification excessive."
+    },
+    {
+      "title": "Tâche",
+      "text": "Le texte source délimite le travail : reformuler un contenu fourni, sans en créer un nouveau."
+    },
+    {
+      "title": "Contraintes",
+      "text": "Les faits et les nuances doivent rester stables. Signaler une ambiguïté évite de trancher sans information."
+    },
+    {
+      "title": "Vérification",
+      "text": "La liste finale permet de comparer les transformations et de relire le résultat."
+    }
+  ],
+  "adaptations": [
+    "Indiquer un public précis : nouveaux salariés, stagiaires ou grand public.",
+    "Demander de conserver certains termes métier avec leur définition.",
+    "Fixer une longueur cible compatible avec les informations à conserver.",
+    "Préciser le support : notice, email ou fiche de consignes."
+  ],
+  "variables": [
+    {
+      "name": "PUBLIC",
+      "description": "Les personnes qui liront le texte."
+    },
+    {
+      "name": "NIVEAU",
+      "description": "Leur familiarité avec le sujet."
+    },
+    {
+      "name": "OBJECTIF",
+      "description": "Ce que le lecteur doit comprendre ou pouvoir faire."
+    },
+    {
+      "name": "TEXTE",
+      "description": "Le texte complet ou le passage que vous souhaitez reformuler."
+    }
+  ],
+  "keywords": [
+    "reformulation",
+    "langage clair",
+    "accessibilité",
+    "simplification"
+  ],
+  "tool": "Un assistant IA capable de traiter du texte.",
+  "active": true
+}

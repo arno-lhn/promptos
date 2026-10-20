@@ -1,0 +1,26 @@
+[
+  {
+    "id": "accessible",
+    "label": "Très accessible",
+    "promptText": "Utilise un vocabulaire simple et accessible, sans supposer de connaissances techniques préalables.",
+    "active": true
+  },
+  {
+    "id": "everyday",
+    "label": "Courant",
+    "promptText": "Utilise un langage courant et explique les termes peu familiers.",
+    "active": true
+  },
+  {
+    "id": "professional",
+    "label": "Professionnel",
+    "promptText": "Utilise un vocabulaire professionnel adapté au sujet, sans complexité inutile.",
+    "active": true
+  },
+  {
+    "id": "technical",
+    "label": "Technique",
+    "promptText": "Utilise un vocabulaire technique lorsque cela est pertinent, en conservant des explications précises.",
+    "active": true
+  }
+]

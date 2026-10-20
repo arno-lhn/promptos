@@ -1,0 +1,61 @@
+{
+  "order": 1,
+  "id": "email-professionnel",
+  "slug": "email-professionnel",
+  "title": "Rédiger un email professionnel",
+  "category": "redaction",
+  "description": "Préparer un message clair, adapté à son destinataire et orienté vers une action.",
+  "need": "Je dois écrire un email à un interlocuteur professionnel. Je connais les faits à transmettre, mais j’ai besoin d’aide pour les organiser et choisir un ton adapté.",
+  "prompt": "Adopte le rôle d’un assistant de rédaction professionnelle.\n\nJe dois écrire à [DESTINATAIRE] au sujet de [SUJET]. Mon objectif est [OBJECTIF]. Voici les faits et les informations à transmettre :\n[INFORMATIONS]\n\nRédige un email dans un ton professionnel, courtois et direct. Adapte le vocabulaire à la relation avec le destinataire. Fais apparaître clairement la demande ou l’action attendue, ainsi que l’échéance si elle figure dans mes informations.\n\nN’invente ni engagement, ni date, ni pièce jointe. Si une précision essentielle manque, pose une question avant de rédiger. Évite les formules excessives et les répétitions.\n\nPrésente un objet explicite, puis le corps de l’email avec une formule d’appel et une conclusion brève. Laisse la signature à compléter.",
+  "explanation": [
+    {
+      "title": "Rôle et contexte",
+      "text": "Le rôle précise la tâche de rédaction. Le destinataire et le sujet situent le message dans une relation concrète."
+    },
+    {
+      "title": "Objectif",
+      "text": "L’objectif guide la demande et l’action attendue : informer, relancer, demander une réponse ou confirmer un accord."
+    },
+    {
+      "title": "Informations et limites",
+      "text": "Les faits fournis constituent la matière du message. L’interdiction d’inventer protège les dates, engagements et pièces jointes."
+    },
+    {
+      "title": "Format",
+      "text": "L’objet et le corps de l’email rendent le résultat facile à relire puis à utiliser."
+    }
+  ],
+  "adaptations": [
+    "Préciser si le destinataire est un client, un collègue ou un responsable.",
+    "Indiquer une longueur maximale ou un nombre de paragraphes.",
+    "Remplacer le ton professionnel par un ton plus formel ou plus chaleureux.",
+    "Ajouter une échéance réelle et la réponse attendue."
+  ],
+  "variables": [
+    {
+      "name": "DESTINATAIRE",
+      "description": "La personne ou la fonction à laquelle vous écrivez et votre relation avec elle."
+    },
+    {
+      "name": "SUJET",
+      "description": "Le thème de l’email."
+    },
+    {
+      "name": "OBJECTIF",
+      "description": "Ce que vous souhaitez obtenir avec ce message."
+    },
+    {
+      "name": "INFORMATIONS",
+      "description": "Les faits exacts à transmettre, sans données sensibles inutiles."
+    }
+  ],
+  "keywords": [
+    "email",
+    "courriel",
+    "message",
+    "relance",
+    "rédaction professionnelle"
+  ],
+  "tool": "Un assistant IA capable de traiter du texte.",
+  "active": true
+}

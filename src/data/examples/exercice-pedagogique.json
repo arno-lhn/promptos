@@ -1,0 +1,68 @@
+{
+  "order": 4,
+  "id": "exercice-pedagogique",
+  "slug": "exercice-pedagogique",
+  "title": "Créer un exercice pédagogique",
+  "category": "formation",
+  "description": "Concevoir une activité avec une consigne précise, un corrigé et des critères de réussite.",
+  "need": "Je souhaite faire pratiquer une compétence à mes apprenants. J’ai besoin d’un exercice adapté à leur niveau et d’un corrigé exploitable.",
+  "prompt": "Adopte le rôle d’un concepteur d’activités pédagogiques.\n\nCrée un exercice sur [SUJET] destiné à [PUBLIC], de niveau [NIVEAU]. La compétence visée est [COMPETENCE]. Les apprenants disposent de [DUREE] et de [RESSOURCES].\n\nPropose une situation concrète, une consigne autonome et les données nécessaires pour réaliser l’exercice. L’activité doit solliciter la compétence indiquée, sans exiger de connaissances supplémentaires non annoncées. Utilise des données fictives lorsqu’un exemple chiffré ou un nom est nécessaire et indique-le clairement.\n\nSépare la version destinée aux apprenants et le corrigé destiné au formateur. Dans le corrigé, explique la démarche et présente des critères de réussite observables. Si plusieurs réponses sont possibles, accepte les variantes justifiées.\n\nAjoute une erreur fréquente à discuter et une question de débriefing. Vérifie que les informations de l’énoncé permettent effectivement de répondre.",
+  "explanation": [
+    {
+      "title": "Compétence",
+      "text": "La compétence détermine ce que l’exercice doit faire pratiquer. Le sujet seul ne précise pas l’action attendue."
+    },
+    {
+      "title": "Public et moyens",
+      "text": "Le niveau, le temps et les ressources évitent de demander une activité irréalisable."
+    },
+    {
+      "title": "Données",
+      "text": "Des données fictives explicites permettent de construire une situation sans les présenter comme des faits réels."
+    },
+    {
+      "title": "Évaluation",
+      "text": "Un corrigé expliqué et des critères observables facilitent l’analyse des réponses et le retour aux apprenants."
+    }
+  ],
+  "adaptations": [
+    "Choisir une réalisation individuelle ou en petits groupes.",
+    "Transformer l’activité en étude de cas ou en simulation.",
+    "Ajouter une aide progressive pour les débutants.",
+    "Définir une grille de correction avec un barème."
+  ],
+  "variables": [
+    {
+      "name": "SUJET",
+      "description": "Le thème de l’exercice."
+    },
+    {
+      "name": "PUBLIC",
+      "description": "Les apprenants concernés."
+    },
+    {
+      "name": "NIVEAU",
+      "description": "Leur niveau sur ce sujet."
+    },
+    {
+      "name": "COMPETENCE",
+      "description": "L’action à pratiquer et à évaluer."
+    },
+    {
+      "name": "DUREE",
+      "description": "Le temps disponible pour l’activité."
+    },
+    {
+      "name": "RESSOURCES",
+      "description": "Les documents ou outils autorisés."
+    }
+  ],
+  "keywords": [
+    "exercice",
+    "corrigé",
+    "évaluation",
+    "activité pédagogique"
+  ],
+  "tool": "Un assistant IA capable de traiter du texte.",
+  "active": true
+}

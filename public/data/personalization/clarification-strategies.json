@@ -1,0 +1,26 @@
+[
+  {
+    "id": "one-question",
+    "label": "Poser une question lorsqu’une information essentielle manque",
+    "promptText": "Pose une question lorsqu’une information essentielle manque pour répondre utilement.",
+    "active": true
+  },
+  {
+    "id": "questions",
+    "label": "Poser plusieurs questions avant de commencer si nécessaire",
+    "promptText": "Si nécessaire, pose les questions utiles avant de commencer afin de clarifier ma demande.",
+    "active": true
+  },
+  {
+    "id": "assumptions",
+    "label": "Formuler des hypothèses explicites et avancer",
+    "promptText": "Lorsque des précisions manquent, formule des hypothèses explicites et avance en indiquant leurs limites.",
+    "active": true
+  },
+  {
+    "id": "interpretations",
+    "label": "Proposer plusieurs interprétations possibles",
+    "promptText": "Lorsqu’une demande est ambiguë, propose plusieurs interprétations possibles pour m’aider à préciser mon intention.",
+    "active": true
+  }
+]

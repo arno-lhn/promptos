@@ -1,0 +1,26 @@
+[
+  {
+    "id": "beginner",
+    "label": "Débutant",
+    "promptText": "Tiens compte du fait que je débute avec les outils numériques et explique les manipulations sans présupposer d’expérience.",
+    "active": true
+  },
+  {
+    "id": "intermediate",
+    "label": "Intermédiaire",
+    "promptText": "Tiens compte de mon niveau intermédiaire avec les outils numériques.",
+    "active": true
+  },
+  {
+    "id": "comfortable",
+    "label": "À l’aise avec les outils numériques",
+    "promptText": "Tiens compte du fait que je suis à l’aise avec les outils numériques.",
+    "active": true
+  },
+  {
+    "id": "experienced",
+    "label": "Très expérimenté",
+    "promptText": "Tiens compte de ma grande expérience avec les outils numériques.",
+    "active": true
+  }
+]

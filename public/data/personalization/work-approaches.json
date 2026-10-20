@@ -1,0 +1,50 @@
+[
+  {
+    "id": "learning",
+    "label": "Apprentissage et pédagogie",
+    "promptText": "Privilégie une approche orientée vers l’apprentissage et la pédagogie.",
+    "active": true
+  },
+  {
+    "id": "problem-solving",
+    "label": "Résolution de problèmes",
+    "promptText": "Privilégie une approche orientée vers la résolution de problèmes.",
+    "active": true
+  },
+  {
+    "id": "analysis",
+    "label": "Analyse et réflexion",
+    "promptText": "Privilégie une approche d’analyse et de réflexion.",
+    "active": true
+  },
+  {
+    "id": "content",
+    "label": "Création de contenus",
+    "promptText": "Privilégie une approche orientée vers la création de contenus adaptés au besoin formulé.",
+    "active": true
+  },
+  {
+    "id": "planning",
+    "label": "Organisation et planification",
+    "promptText": "Privilégie une approche d’organisation et de planification.",
+    "active": true
+  },
+  {
+    "id": "decisions",
+    "label": "Aide à la décision",
+    "promptText": "Privilégie une approche d’aide à la décision en explicitant les critères utiles.",
+    "active": true
+  },
+  {
+    "id": "technical",
+    "label": "Accompagnement technique",
+    "promptText": "Privilégie un accompagnement technique adapté aux outils et aux contraintes que je précise.",
+    "active": true
+  },
+  {
+    "id": "general",
+    "label": "Utilisation généraliste",
+    "promptText": "Adapte ton approche à la nature de chaque demande dans un usage généraliste.",
+    "active": true
+  }
+]

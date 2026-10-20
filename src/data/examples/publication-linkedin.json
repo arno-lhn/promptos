@@ -1,0 +1,64 @@
+{
+  "order": 10,
+  "id": "publication-linkedin",
+  "slug": "publication-linkedin",
+  "title": "Rédiger une publication LinkedIn",
+  "category": "communication",
+  "description": "Préparer une publication professionnelle fidèle aux faits et adaptée à son audience.",
+  "need": "Je souhaite partager une expérience ou une information sur LinkedIn. Je veux un message clair qui conserve ma manière de m’exprimer.",
+  "prompt": "Aide-moi à rédiger une publication LinkedIn sur [SUJET], destinée à [PUBLIC]. Mon objectif est [OBJECTIF]. Voici l’expérience, les faits et les idées que je souhaite partager :\n[CONTENU]\n\nRédige dans un ton [TON], en restant fidèle à ces informations. Commence par une accroche claire et honnête, développe une idée principale avec un exemple tiré de mon contenu, puis termine par une question ou une invitation pertinente pour mon objectif.\n\nN’invente ni témoignage, ni chiffre, ni résultat personnel. Évite les promesses excessives, les formules artificiellement sensationnelles et les compliments automatiques. Ne prétends pas connaître les règles actuelles de diffusion de la plateforme.\n\nPrésente une version courte et aérée, avec des paragraphes faciles à lire. Ajoute séparément deux variantes d’accroche et indique les informations que je dois vérifier avant publication. N’ajoute pas de hashtags ou d’emojis sauf si je le demande.",
+  "explanation": [
+    {
+      "title": "Objectif et audience",
+      "text": "Partager une expérience, informer ou ouvrir un échange demande un contenu adapté à ses destinataires."
+    },
+    {
+      "title": "Matière du message",
+      "text": "Le contenu fourni sert de base et évite l’invention d’une expérience personnelle."
+    },
+    {
+      "title": "Ton et limites",
+      "text": "Le ton est choisi explicitement ; les contraintes protègent la crédibilité du message."
+    },
+    {
+      "title": "Variantes",
+      "text": "Les accroches alternatives permettent de choisir sa formulation sans multiplier les versions complètes."
+    }
+  ],
+  "adaptations": [
+    "Préciser une longueur cible et votre manière habituelle de vous exprimer.",
+    "Ajouter un exemple réel que vous avez le droit de partager.",
+    "Remplacer l’invitation finale par une question précise.",
+    "Demander des hashtags ou des emojis seulement si cela correspond à votre intention."
+  ],
+  "variables": [
+    {
+      "name": "SUJET",
+      "description": "Le thème de la publication."
+    },
+    {
+      "name": "PUBLIC",
+      "description": "Les personnes que vous souhaitez toucher."
+    },
+    {
+      "name": "OBJECTIF",
+      "description": "Le but concret de votre publication."
+    },
+    {
+      "name": "CONTENU",
+      "description": "Vos faits, votre expérience et les idées à conserver."
+    },
+    {
+      "name": "TON",
+      "description": "Le ton souhaité : professionnel, sobre, chaleureux ou direct."
+    }
+  ],
+  "keywords": [
+    "linkedin",
+    "publication",
+    "réseaux sociaux",
+    "communication"
+  ],
+  "tool": "Un assistant IA capable de traiter du texte.",
+  "active": true
+}

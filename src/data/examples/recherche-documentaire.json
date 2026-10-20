@@ -1,0 +1,61 @@
+{
+  "order": 7,
+  "id": "recherche-documentaire",
+  "slug": "recherche-documentaire",
+  "title": "Préparer une recherche documentaire",
+  "category": "recherche",
+  "description": "Construire une question de recherche, choisir des sources et prévoir leur vérification.",
+  "need": "Je dois me documenter sur un sujet. Je souhaite organiser ma recherche et savoir comment apprécier les informations trouvées.",
+  "prompt": "Aide-moi à préparer une recherche documentaire sur [SUJET], pour [OBJECTIF]. Le périmètre est [PERIMETRE] et la période étudiée est [PERIODE].\n\nCommence par proposer une question de recherche précise et trois sous-questions. Prépare une liste de mots-clés et de synonymes, puis indique les types de sources à privilégier : organismes officiels, publications de recherche, institutions ou documents professionnels pertinents.\n\nSi tu disposes d’un accès à des sources externes, indique ce que tu as réellement consulté, les liens, les dates de publication et les limites des informations. Sinon, fournis une stratégie de recherche à effectuer et précise que les références proposées ne sont pas vérifiées. N’invente jamais de titre, d’auteur ou de lien.\n\nDistingue faits établis, hypothèses et points à confirmer. Présente une grille de lecture : pertinence, auteur, date, méthode, sources citées et éventuel conflit d’intérêts. Termine par un plan de synthèse et une liste de vérifications à réaliser avant d’utiliser les résultats.",
+  "explanation": [
+    {
+      "title": "Question de recherche",
+      "text": "Le sujet devient une question précise, complétée par un périmètre et une période."
+    },
+    {
+      "title": "Sources",
+      "text": "Le prompt donne des critères de choix plutôt qu’une liste de références prétendument fiables."
+    },
+    {
+      "title": "Capacités de l’assistant",
+      "text": "L’accès au Web reste conditionnel. La stratégie est utile même si l’assistant ne peut consulter aucune source."
+    },
+    {
+      "title": "Esprit critique",
+      "text": "Les dates, la méthode et la distinction entre faits et hypothèses permettent de contrôler les informations recueillies."
+    }
+  ],
+  "adaptations": [
+    "Limiter la recherche à un pays, un secteur ou une période.",
+    "Ajouter une langue pour les sources à consulter.",
+    "Indiquer les documents déjà disponibles.",
+    "Demander une synthèse destinée à un public précis."
+  ],
+  "variables": [
+    {
+      "name": "SUJET",
+      "description": "Le thème de la recherche."
+    },
+    {
+      "name": "OBJECTIF",
+      "description": "L’usage prévu : préparer un dossier, comprendre un débat ou documenter une décision."
+    },
+    {
+      "name": "PERIMETRE",
+      "description": "Le champ géographique, professionnel ou thématique."
+    },
+    {
+      "name": "PERIODE",
+      "description": "La période étudiée et la fraîcheur attendue des informations."
+    }
+  ],
+  "keywords": [
+    "recherche",
+    "documentation",
+    "sources",
+    "vérification",
+    "mots-clés"
+  ],
+  "tool": "Un assistant IA capable de traiter du texte.",
+  "active": true
+}

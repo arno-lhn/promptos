@@ -1,0 +1,74 @@
+{
+  "order": 6,
+  "id": "presentation-gamma",
+  "slug": "presentation-gamma",
+  "title": "Préparer un plan de présentation avec Gamma",
+  "category": "presentations",
+  "description": "Préparer un contenu de diapositives structuré, utilisable comme base dans un outil de présentation.",
+  "need": "Je souhaite préparer une présentation et disposer d’un plan ainsi que du contenu essentiel de chaque diapositive avant de travailler sa mise en forme.",
+  "prompt": "Prépare le contenu d’une présentation sur [SUJET], destinée à [PUBLIC]. Son objectif est [OBJECTIF]. Je souhaite [NOMBRE] diapositives, avec un niveau de détail [DETAIL]. Le style attendu est [STYLE] et les contraintes sont [CONTRAINTES].\n\nOrganise une progression claire : introduction du sujet, développement des idées et conclusion avec le message à retenir. Attribue une idée principale à chaque diapositive. Vérifie que le nombre total de diapositives correspond à ma demande, titre et conclusion compris.\n\nPour chaque diapositive, fournis un titre, le message essentiel, trois à cinq points courts au maximum et une suggestion visuelle décrite en mots. Sépare les notes destinées à l’oral du texte destiné à être affiché.\n\nN’invente pas de chiffres, de témoignages ou de références. Signale les informations manquantes. Le résultat doit être un plan et un contenu textuel que je pourrai adapter dans Gamma ou un autre outil de présentation, sans supposer une fonction particulière d’importation ou de génération.",
+  "explanation": [
+    {
+      "title": "Sujet, public et objectif",
+      "text": "Ces trois repères déterminent ce qu’il faut transmettre, à qui et dans quel but."
+    },
+    {
+      "title": "Contraintes de présentation",
+      "text": "Le nombre de diapositives et le niveau de détail limitent la densité et donnent un résultat vérifiable."
+    },
+    {
+      "title": "Format de sortie",
+      "text": "Un titre, une idée centrale et des points courts facilitent la transformation du texte en diapositives. Les notes orales restent séparées."
+    },
+    {
+      "title": "Usage dans un outil",
+      "text": "Le prompt prépare un contenu. Il ne promet ni création de fichier ni compatibilité avec une fonctionnalité spécifique de Gamma."
+    }
+  ],
+  "adaptations": [
+    "Choisir le nombre de diapositives selon le temps de présentation.",
+    "Préciser un style sobre, pédagogique ou visuel.",
+    "Fournir vos données vérifiées et leurs sources.",
+    "Adapter la présentation à un public débutant ou expérimenté.",
+    "Ajouter une contrainte de charte graphique à appliquer ensuite dans l’outil."
+  ],
+  "variables": [
+    {
+      "name": "SUJET",
+      "description": "Le thème de la présentation."
+    },
+    {
+      "name": "PUBLIC",
+      "description": "Les personnes qui la consulteront."
+    },
+    {
+      "name": "OBJECTIF",
+      "description": "Ce que le public doit comprendre, retenir ou décider."
+    },
+    {
+      "name": "NOMBRE",
+      "description": "Le nombre total de diapositives souhaité."
+    },
+    {
+      "name": "DETAIL",
+      "description": "Un niveau synthétique, intermédiaire ou détaillé."
+    },
+    {
+      "name": "STYLE",
+      "description": "Le style de présentation souhaité."
+    },
+    {
+      "name": "CONTRAINTES",
+      "description": "Les limites de durée, les contenus imposés et les éléments à éviter."
+    }
+  ],
+  "keywords": [
+    "gamma",
+    "présentation",
+    "diapositives",
+    "plan",
+    "slides"
+  ],
+  "tool": "Un assistant textuel pour préparer le contenu, puis Gamma ou un autre outil de présentation pour sa mise en forme.",
+  "active": true
+}

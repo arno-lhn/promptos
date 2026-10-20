@@ -1,0 +1,69 @@
+{
+  "order": 3,
+  "id": "seance-formation",
+  "slug": "seance-formation",
+  "title": "Préparer une séance de formation",
+  "category": "formation",
+  "description": "Construire un déroulé pédagogique réaliste avec des activités et une évaluation.",
+  "need": "Je prépare une séance pour des adultes. Je dois répartir le temps entre explications, activités et vérification des acquis.",
+  "prompt": "Adopte une démarche d’ingénierie pédagogique pour préparer une séance de formation.\n\nLe sujet est [SUJET]. Le public est [PUBLIC] et ses prérequis sont [PREREQUIS]. La séance dure [DUREE]. À son terme, les participants doivent pouvoir [OBJECTIF]. Les moyens disponibles sont [MOYENS].\n\nPropose un déroulé adapté à ce public. Prévois une introduction, une progression des notions, une activité de mise en pratique et une vérification finale des acquis. Alterne les temps d’explication et d’activité. Vérifie que la somme des durées correspond au temps disponible.\n\nN’impose pas d’outil ou de matériel absent des moyens indiqués. Si l’objectif semble trop large, explique-le et propose un périmètre réalisable.\n\nPrésente un tableau avec : durée, objectif de l’étape, activité du formateur, activité des participants et support. Termine par une consigne d’évaluation et deux adaptations possibles pour des rythmes d’apprentissage différents.",
+  "explanation": [
+    {
+      "title": "Objectif observable",
+      "text": "La formule « doivent pouvoir » invite à décrire une compétence vérifiable plutôt qu’un thème général."
+    },
+    {
+      "title": "Contexte",
+      "text": "La durée, les prérequis et les moyens rendent la proposition compatible avec une situation de formation réelle."
+    },
+    {
+      "title": "Méthode",
+      "text": "L’alternance entre explications et activités favorise une progression explicite."
+    },
+    {
+      "title": "Format et contrôle",
+      "text": "Le tableau permet de vérifier le déroulé et les durées ; l’évaluation relie les activités à l’objectif."
+    }
+  ],
+  "adaptations": [
+    "Préciser si la séance se déroule en présentiel ou à distance.",
+    "Adapter la durée et la taille du groupe.",
+    "Ajouter les besoins d’accessibilité des participants.",
+    "Demander une version centrée sur la mise en pratique."
+  ],
+  "variables": [
+    {
+      "name": "SUJET",
+      "description": "Le thème ou la compétence à travailler."
+    },
+    {
+      "name": "PUBLIC",
+      "description": "Les participants, leur métier et la taille du groupe."
+    },
+    {
+      "name": "PREREQUIS",
+      "description": "Les connaissances déjà acquises, ou la mention « aucun »."
+    },
+    {
+      "name": "DUREE",
+      "description": "Le temps total disponible, pauses comprises si nécessaire."
+    },
+    {
+      "name": "OBJECTIF",
+      "description": "Une action observable que les participants doivent savoir réaliser."
+    },
+    {
+      "name": "MOYENS",
+      "description": "Le matériel, les supports et les outils réellement disponibles."
+    }
+  ],
+  "keywords": [
+    "formation",
+    "séance",
+    "déroulé",
+    "pédagogie",
+    "animation"
+  ],
+  "tool": "Un assistant IA capable de traiter du texte.",
+  "active": true
+}

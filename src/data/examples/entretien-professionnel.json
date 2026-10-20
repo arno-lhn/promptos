@@ -1,0 +1,61 @@
+{
+  "order": 12,
+  "id": "entretien-professionnel",
+  "slug": "entretien-professionnel",
+  "title": "Préparer un entretien professionnel",
+  "category": "organisation",
+  "description": "Préparer ses arguments, ses exemples et ses questions pour un échange professionnel.",
+  "need": "Je souhaite préparer un échange professionnel sur mes activités, mes compétences et mes perspectives. Je veux arriver avec des exemples concrets et des questions utiles.",
+  "prompt": "Aide-moi à préparer un entretien professionnel dont le contexte est [CONTEXTE]. Ma fonction est [FONCTION] et les sujets que je souhaite aborder sont [SUJETS]. Voici les réalisations, difficultés et objectifs que je peux partager :\n[ELEMENTS]\n\nPropose une préparation structurée : bilan des activités, compétences mobilisées, difficultés rencontrées, besoins d’accompagnement et perspectives. Pour chaque sujet, aide-moi à relier une affirmation à un exemple concret tiré des éléments fournis.\n\nN’invente ni résultat, ni expérience, ni compétence. Signale les points qui gagneraient à être précisés ou documentés. Conserve un ton professionnel et constructif, sans transformer les difficultés en reproches.\n\nPrésente une fiche de préparation, cinq questions utiles à poser et trois questions auxquelles m’entraîner à répondre. Ne présume pas du cadre juridique de l’entretien : si celui-ci est nécessaire, demande le pays et le dispositif exact avant toute précision sur les obligations.",
+  "explanation": [
+    {
+      "title": "Contexte",
+      "text": "Le type d’échange et la fonction permettent de préparer des sujets adaptés, sans supposer un dispositif réglementaire particulier."
+    },
+    {
+      "title": "Exemples concrets",
+      "text": "Les réalisations et difficultés fournies donnent une base crédible aux arguments."
+    },
+    {
+      "title": "Posture",
+      "text": "Le ton constructif aide à présenter ses besoins et ses perspectives de manière professionnelle."
+    },
+    {
+      "title": "Entraînement",
+      "text": "La fiche et les questions permettent de préparer l’échange puis de s’exercer à l’oral."
+    }
+  ],
+  "adaptations": [
+    "Préciser la nature de l’échange et les sujets prévus.",
+    "Ajouter des réalisations réelles et les éléments qui les illustrent.",
+    "Indiquer vos objectifs de développement de compétences.",
+    "Demander une simulation d’entretien après avoir relu la fiche."
+  ],
+  "variables": [
+    {
+      "name": "CONTEXTE",
+      "description": "La nature et le but de l’entretien, sans supposer un cadre réglementaire."
+    },
+    {
+      "name": "FONCTION",
+      "description": "Votre fonction et vos principales missions."
+    },
+    {
+      "name": "SUJETS",
+      "description": "Les thèmes que vous souhaitez aborder."
+    },
+    {
+      "name": "ELEMENTS",
+      "description": "Vos faits, exemples, difficultés et souhaits, sans informations confidentielles inutiles."
+    }
+  ],
+  "keywords": [
+    "entretien",
+    "préparation",
+    "compétences",
+    "bilan",
+    "organisation"
+  ],
+  "tool": "Un assistant IA capable de traiter du texte.",
+  "active": true
+}
