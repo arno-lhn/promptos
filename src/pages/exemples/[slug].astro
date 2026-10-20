@@ -1,0 +1,23 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CopyOutput from '../../components/ui/CopyOutput.svelte';
+import { activeExamples } from '../../lib/examples-data.ts';
+import { exampleCategories, type PromptExample } from '../../lib/examples.ts';
+export const getStaticPaths = (() => activeExamples.map(example => ({ params: { slug: example.slug }, props: { example } }))) satisfies GetStaticPaths;
+interface Props { example: PromptExample; }
+const { example } = Astro.props;
+const category = exampleCategories.find(category => category.id === example.category);
+---
+<BaseLayout title={example.title}>
+  <article class="resource-page example-detail page-width">
+    <a class="back-link" href="/exemples/">← Tous les exemples</a>
+    <header class="resource-intro"><span class="category-label">{category?.label}</span><h1>{example.title}</h1><p>{example.description}</p></header>
+    <section class="detail-section" aria-labelledby="need-title"><h2 id="need-title">Le besoin</h2><p>{example.need}</p></section>
+    <section class="detail-section" aria-labelledby="example-prompt-title"><h2 id="example-prompt-title">Le prompt proposé</h2><p>Remplacez les repères entre crochets par vos informations avant d’utiliser ce prompt.</p><CopyOutput text={example.prompt} id="example-prompt" label="Prompt complet de l’exemple" buttonLabel="Copier ce prompt" client:load /><noscript><p>Activez JavaScript pour la copie automatique, ou sélectionnez le texte puis utilisez la commande Copier de votre appareil.</p></noscript></section>
+    <section class="detail-section" aria-labelledby="construction-title"><h2 id="construction-title">Comprendre sa construction</h2><div class="explanation-grid">{example.explanation.map(item => <div><h3>{item.title}</h3><p>{item.text}</p></div>)}</div></section>
+    <section class="detail-section" aria-labelledby="adaptation-title"><h2 id="adaptation-title">Comment l’adapter</h2><p>Les éléments entre crochets sont des repères à remplacer, et non des instructions à conserver tels quels.</p><dl class="variable-list">{example.variables.map(variable => <div><dt>[{variable.name}]</dt><dd>{variable.description}</dd></div>)}</dl><h3>Quelques pistes</h3><ul>{example.adaptations.map(text => <li>{text}</li>)}</ul><a class="text-button inline-link" href="/atelier/">Construire mon propre prompt ↗</a></section>
+    {example.tool && <section class="detail-section" aria-labelledby="tool-title"><h2 id="tool-title">Outil ou type d’outil adapté</h2><p>{example.tool}</p></section>}
+    <div class="detail-navigation"><a class="button secondary" href="/exemples/">Explorer les autres exemples <span aria-hidden="true">↗</span></a><a class="text-button inline-link" href="/instructions-personnalisees/">Personnaliser mon IA</a></div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,57 @@
+{
+  "order": 5,
+  "id": "notion-complexe",
+  "slug": "notion-complexe",
+  "title": "Comprendre une notion complexe",
+  "category": "apprentissage",
+  "description": "Découvrir une notion progressivement, avec un exemple et des questions de compréhension.",
+  "need": "Je rencontre une notion que je comprends mal. Je voudrais une explication adaptée à mes connaissances, puis vérifier ce que j’ai retenu.",
+  "prompt": "Aide-moi à comprendre [NOTION]. Mon niveau actuel est [NIVEAU] et je souhaite comprendre cette notion pour [USAGE].\n\nAdopte une démarche pédagogique et progressive. Commence par une définition en langage courant, puis explique les deux ou trois idées fondamentales nécessaires. Présente un exemple concret lié à mon usage. Tu peux utiliser une analogie, mais précise ses limites pour éviter de confondre l’image et le fonctionnement réel.\n\nDéfinis les termes techniques au moment où tu les utilises. Distingue les simplifications pédagogiques des éléments rigoureusement établis. Ne suppose pas que je connais déjà les notions voisines : indique celles qui sont indispensables.\n\nTermine par trois questions courtes pour vérifier ma compréhension. Présente les réponses attendues dans une partie séparée afin que je puisse essayer d’abord par moi-même. Signale les aspects incertains ou dépendants du contexte.",
+  "explanation": [
+    {
+      "title": "Intention",
+      "text": "La demande porte sur la compréhension, pas seulement sur l’obtention d’une définition."
+    },
+    {
+      "title": "Niveau et usage",
+      "text": "Ces indications orientent la progression et le choix d’un exemple concret."
+    },
+    {
+      "title": "Méthode",
+      "text": "Les fondamentaux, les définitions et l’analogie sont des moyens complémentaires ; les limites de l’analogie sont explicitées."
+    },
+    {
+      "title": "Vérification des acquis",
+      "text": "Les questions permettent de s’entraîner avant de consulter les réponses."
+    }
+  ],
+  "adaptations": [
+    "Préciser ce qui vous bloque dans la notion.",
+    "Demander un exemple lié à votre métier ou à votre quotidien.",
+    "Limiter l’explication à une durée de lecture donnée.",
+    "Demander un exercice supplémentaire après les questions."
+  ],
+  "variables": [
+    {
+      "name": "NOTION",
+      "description": "La notion à comprendre."
+    },
+    {
+      "name": "NIVEAU",
+      "description": "Ce que vous savez déjà et ce que vous découvrez."
+    },
+    {
+      "name": "USAGE",
+      "description": "La raison pour laquelle vous voulez comprendre cette notion."
+    }
+  ],
+  "keywords": [
+    "comprendre",
+    "notion",
+    "explication",
+    "apprentissage",
+    "analogie"
+  ],
+  "tool": "Un assistant IA capable de traiter du texte.",
+  "active": true
+}

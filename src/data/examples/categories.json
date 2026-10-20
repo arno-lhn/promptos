@@ -1,0 +1,34 @@
+[
+  {
+    "id": "redaction",
+    "label": "Rédaction"
+  },
+  {
+    "id": "formation",
+    "label": "Formation"
+  },
+  {
+    "id": "recherche",
+    "label": "Recherche"
+  },
+  {
+    "id": "presentations",
+    "label": "Présentations"
+  },
+  {
+    "id": "communication",
+    "label": "Communication"
+  },
+  {
+    "id": "organisation",
+    "label": "Organisation"
+  },
+  {
+    "id": "analyse",
+    "label": "Analyse"
+  },
+  {
+    "id": "apprentissage",
+    "label": "Apprentissage"
+  }
+]

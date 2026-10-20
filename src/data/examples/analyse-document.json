@@ -1,0 +1,57 @@
+{
+  "order": 8,
+  "id": "analyse-document",
+  "slug": "analyse-document",
+  "title": "Analyser un document",
+  "category": "analyse",
+  "description": "Examiner un contenu fourni et distinguer son résumé des interprétations possibles.",
+  "need": "Je dispose d’un document et je souhaite en comprendre les idées principales, les points d’attention et les limites, sans lui faire dire autre chose.",
+  "prompt": "Analyse le document ci-dessous pour répondre à cet objectif : [OBJECTIF]. Le résultat s’adresse à [PUBLIC].\n\nDocument ou extrait à analyser :\n[DOCUMENT]\n\nAppuie-toi uniquement sur le contenu fourni. Commence par identifier la nature du document, son sujet et sa date si elle est indiquée. Résume les idées principales sans ajouter de faits extérieurs.\n\nPrésente ensuite les informations utiles à mon objectif, les arguments, les hypothèses de l’auteur et les éventuelles incohérences. Distingue clairement ce qui figure dans le texte de tes interprétations. Pour les points importants, donne un repère de page, de section ou un court extrait exact lorsque le contenu disponible le permet.\n\nNe complète pas une partie manquante par supposition. Si le document est incomplet ou illisible, explique les conséquences pour l’analyse.\n\nPrésente un résumé, un tableau « constat / appui dans le document / limite » et les questions restant à clarifier.",
+  "explanation": [
+    {
+      "title": "Contenu à fournir",
+      "text": "Remplacez DOCUMENT par le texte pertinent, ou transmettez le fichier à votre assistant s’il accepte les importations. PromptOS n’analyse aucun document."
+    },
+    {
+      "title": "Objectif et public",
+      "text": "Ces informations sélectionnent les points utiles et ajustent leur présentation."
+    },
+    {
+      "title": "Faits et interprétations",
+      "text": "La distinction empêche de présenter une déduction comme une affirmation de l’auteur."
+    },
+    {
+      "title": "Traçabilité",
+      "text": "Les repères dans le document permettent de contrôler les constats et de revenir au passage concerné."
+    }
+  ],
+  "adaptations": [
+    "Préciser une question particulière à laquelle le document doit répondre.",
+    "Limiter l’analyse à un chapitre ou un passage.",
+    "Demander une synthèse destinée à une réunion.",
+    "Fournir des repères de pages si vous collez un extrait."
+  ],
+  "variables": [
+    {
+      "name": "OBJECTIF",
+      "description": "Ce que vous souhaitez comprendre ou extraire du document."
+    },
+    {
+      "name": "PUBLIC",
+      "description": "Les destinataires de l’analyse."
+    },
+    {
+      "name": "DOCUMENT",
+      "description": "Le texte à analyser. Si l’outil accepte un fichier, joignez-le et remplacez ce repère par son nom exact. Retirez les informations confidentielles inutiles."
+    }
+  ],
+  "keywords": [
+    "document",
+    "analyse",
+    "synthèse",
+    "lecture",
+    "rapport"
+  ],
+  "tool": "Un assistant acceptant du texte ; l’importation d’un fichier dépend des fonctions réellement proposées par l’outil.",
+  "active": true
+}

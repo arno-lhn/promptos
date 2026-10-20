@@ -1,0 +1,65 @@
+{
+  "order": 11,
+  "id": "plan-action",
+  "slug": "plan-action",
+  "title": "Organiser un projet en étapes",
+  "category": "organisation",
+  "description": "Transformer un objectif en étapes, livrables et points de suivi réalistes.",
+  "need": "J’ai un projet à mener et je souhaite organiser le travail. Je dois identifier les premières étapes, les dépendances et les décisions à prendre.",
+  "prompt": "Aide-moi à organiser le projet suivant : [PROJET]. Le résultat attendu est [RESULTAT]. L’échéance est [ECHEANCE], les ressources disponibles sont [RESSOURCES] et les contraintes sont [CONTRAINTES].\n\nDécompose le travail en étapes cohérentes, depuis le cadrage jusqu’à la validation du résultat. Pour chaque étape, précise l’action, le livrable attendu, les ressources nécessaires et les dépendances avec les autres étapes.\n\nDistingue les dates que je fournis des estimations que tu proposes. Ne transforme pas une estimation en engagement. Si le délai semble incompatible avec les moyens, explique pourquoi et propose un ajustement de périmètre ou de calendrier.\n\nPrésente un tableau de plan d’action avec une colonne « responsable à désigner », puis les risques principaux et les décisions à prendre. Termine par trois premières actions réalisables. N’attribue pas de responsabilité à une personne que je n’ai pas nommée.",
+  "explanation": [
+    {
+      "title": "Résultat attendu",
+      "text": "Le résultat précise ce que le projet doit produire ; il permet de définir les livrables."
+    },
+    {
+      "title": "Moyens et contraintes",
+      "text": "L’échéance et les ressources rendent le plan plus réaliste. Les estimations restent identifiées comme telles."
+    },
+    {
+      "title": "Dépendances",
+      "text": "L’ordre des étapes doit tenir compte du travail nécessaire avant de commencer la suivante."
+    },
+    {
+      "title": "Passage à l’action",
+      "text": "Les premières actions et les décisions à prendre rendent le plan directement utilisable."
+    }
+  ],
+  "adaptations": [
+    "Ajouter les personnes ou fonctions réellement impliquées.",
+    "Préciser le budget et les moyens disponibles.",
+    "Demander un découpage par semaine ou par phase.",
+    "Définir vos critères de validation du résultat."
+  ],
+  "variables": [
+    {
+      "name": "PROJET",
+      "description": "Le projet à organiser."
+    },
+    {
+      "name": "RESULTAT",
+      "description": "Le résultat concret à obtenir."
+    },
+    {
+      "name": "ECHEANCE",
+      "description": "La date ou le délai cible."
+    },
+    {
+      "name": "RESSOURCES",
+      "description": "Le temps, les personnes et les moyens disponibles."
+    },
+    {
+      "name": "CONTRAINTES",
+      "description": "Les limites et obligations à prendre en compte."
+    }
+  ],
+  "keywords": [
+    "projet",
+    "organisation",
+    "planification",
+    "plan d’action",
+    "étapes"
+  ],
+  "tool": "Un assistant IA capable de traiter du texte.",
+  "active": true
+}
