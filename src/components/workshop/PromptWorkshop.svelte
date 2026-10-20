@@ -69,7 +69,6 @@
         </a>
       {/each}
     </nav>
-    <div class="sidebar-note"><span aria-hidden="true">✳</span><h3>Votre besoin donne le rythme.</h3><p>Explorez les blocs dans l’ordre qui vous convient. Chaque champ est facultatif.</p></div>
     <p class="local-note"><span class="local-dot"></span> Vos saisies restent dans ce navigateur.</p>
   </aside>
 
