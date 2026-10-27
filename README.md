@@ -61,7 +61,7 @@ Les options, aides et règles communes sont dans `public/data/watch-plan/` ; leu
 
 ## Passer à une veille planifiée
 
-Après génération du plan, « Préparer une tâche planifiée » ouvre une suite facultative. Le premier prompt reste consacré à la construction du plan. Cette suite produit des instructions distinctes, autonomes, pour **exécuter la veille** plutôt que reconstruire son organisation à chaque occurrence.
+L’étape **07 « Planifier ma veille »** apparaît dès l’ouverture dans le menu et dans la page. Son lien ouvre directement la préparation ; avant génération, un repère permet de rejoindre le résultat du plan. Après génération, le bouton **« Planifier cette veille »** ouvre cette même étape. Le premier prompt reste consacré à la construction du plan. Cette suite facultative produit des instructions distinctes, autonomes, pour **exécuter la veille** plutôt que reconstruire son organisation à chaque occurrence.
 
 1. Relire le plan obtenu dans son assistant, examiner les sources et préciser le sujet dans PromptOS si nécessaire.
 2. Choisir une recherche avec synthèse ou un simple rappel, puis une fréquence, une heure et un fuseau explicites. Pour une recherche, choisir aussi la période à examiner ; elle est indépendante de la fréquence. Un jour est nécessaire pour une cadence hebdomadaire ou mensuelle (du 1 au 28). Nom, date de fin, sources retenues et taille de synthèse sont facultatifs.

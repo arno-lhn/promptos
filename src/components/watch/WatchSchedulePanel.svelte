@@ -5,8 +5,9 @@
     buildScheduledWatchInstructions, buildWatchScheduleRequest, createEmptyWatchSchedule,
     describeWatchSchedule, getWatchScheduleIssues, watchScheduleData as data,
   } from '../../lib/watch-schedule.ts';
-  let { watchState, stale }: { watchState: WatchState; stale: boolean } = $props();
-  let expanded = $state(false);
+  let { watchState, stale, planReady, expanded = $bindable(false), ongotoresult }: {
+    watchState: WatchState; stale: boolean; planReady: boolean; expanded?: boolean; ongotoresult: () => void;
+  } = $props();
   let config = $state(createEmptyWatchSchedule());
   const issues = $derived(getWatchScheduleIssues(watchState, config));
   const task = $derived(buildScheduledWatchInstructions(watchState, config));
@@ -14,13 +15,16 @@
   const schedule = $derived(describeWatchSchedule(config));
 </script>
 
-<section id="watch-schedule" class="workshop-section watch-schedule" aria-labelledby="watch-schedule-title">
-  <div class="section-heading"><span class="section-number" aria-hidden="true">↻</span><div><h2 id="watch-schedule-title">Passer à une veille planifiée</h2><p>Préparez le travail à répéter et son calendrier dans votre assistant IA.</p></div><span class="optional-label">Facultatif</span></div>
+<section id="watch-schedule" class="workshop-section watch-schedule" tabindex="-1" aria-labelledby="watch-schedule-title">
+  <div class="section-heading"><span class="section-number">07</span><div><h2 id="watch-schedule-title">Planifier ma veille</h2><p>Préparez le travail à répéter et son calendrier dans votre assistant IA.</p></div><span class="optional-label">Facultatif</span></div>
   <div class="schedule-body">
     <p>Une fois votre plan relu et vos premières sources examinées, testez une exécution, puis demandez sa planification. Vous pouvez préparer une recherche avec synthèse ou un simple rappel.</p>
     <p>Cette étape ne crée aucune tâche dans PromptOS. La disponibilité de la planification, des outils et des notifications doit être vérifiée dans votre compte. <a class="text-button inline-link" href={data.documentationUrl}>Guide officiel OpenAI : tester puis planifier</a></p>
     <button type="button" class="button secondary" aria-expanded={expanded} aria-controls="watch-schedule-content" onclick={() => expanded = !expanded}>{expanded ? 'Masquer la préparation' : 'Préparer une tâche planifiée'}</button>
     <div id="watch-schedule-content" hidden={!expanded}>
+      {#if !planReady}
+        <div class="schedule-readiness"><p><strong>Générez d’abord votre demande de plan de veille.</strong></p><p>Après avoir relu le plan dans votre assistant, revenez ici pour choisir une recherche récurrente ou un rappel et préparer les consignes à copier.</p><button type="button" class="button secondary" onclick={ongotoresult}>Aller à la génération du plan <span aria-hidden="true">↗</span></button></div>
+      {:else}
       {#if stale}<p class="stale-message" role="status">Vos repères ont changé. Régénérez d’abord votre demande de plan de veille ; la préparation et la copie de la tâche sont désactivées jusque-là.</p>{/if}
       <form class="schedule-form" aria-label="Préparer le calendrier de la veille" onsubmit={event => event.preventDefault()}>
         <fieldset disabled={stale}>
@@ -59,6 +63,7 @@
         <section class="schedule-step" aria-labelledby="schedule-test-title"><h3 id="schedule-test-title">1. Tester le travail une fois</h3><p>Copiez ces instructions dans votre assistant et examinez le résultat. En mode recherche, vérifiez qu’il consulte réellement les sources et produit des références utiles. Corrigez le périmètre ou les sources avant de planifier.</p><CopyOutput text={task} id="watch-task-instructions" label="Instructions du travail à répéter" buttonLabel="Copier les instructions à tester" disabled={stale} /></section>
         <section class="schedule-step" aria-labelledby="schedule-request-title"><h3 id="schedule-request-title">2. Demander la création de la tâche</h3><p>Après un test satisfaisant, collez cette demande dans la même conversation. Elle demande un récapitulatif et votre accord avant la création effective, si l’outil le permet.</p><CopyOutput text={request} id="watch-schedule-request" label="Demande de création de la tâche planifiée" buttonLabel="Copier la demande de planification" disabled={stale} /></section>
         <section class="schedule-step" aria-labelledby="schedule-confirmation-title"><h3 id="schedule-confirmation-title">3. Vérifier l’enregistrement et les premiers résultats</h3><ul><li>Retrouvez la tâche dans l’espace de planification de votre outil et vérifiez son nom, son mode, son fuseau et sa prochaine exécution.</li><li>Contrôlez les notifications disponibles et les premières exécutions, puis ajustez les consignes ou le rythme.</li><li>Repérez comment modifier, mettre en pause ou supprimer la tâche, notamment si vous ne faisiez qu’un exercice.</li></ul><p>Si vous utilisez directement un formulaire de planification, utilisez le premier texte comme consignes et reportez le calendrier affiché. Une réponse qui décrit une tâche ne prouve pas qu’elle est enregistrée : seule la confirmation effective dans l’outil l’établit.</p></section>
+      {/if}
       {/if}
     </div>
   </div>

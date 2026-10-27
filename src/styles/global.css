@@ -1464,6 +1464,10 @@ legend {
 .schedule-preview p + p {
   margin-top: 12px;
 }
+.schedule-readiness p + p,
+.schedule-readiness > button {
+  margin-top: 16px;
+}
 .schedule-body ul {
   padding-left: 24px;
   max-width: 75ch;

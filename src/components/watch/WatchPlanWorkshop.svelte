@@ -11,16 +11,18 @@
   let result = $state('');
   let active = $state(sections[0].id);
   let error = $state('');
+  let scheduleExpanded = $state(false);
   let resetDialog: HTMLDialogElement;
   let resetTrigger: HTMLElement | null = null;
   const candidate = $derived(buildWatchPrompt(formState));
   const stale = $derived(isWatchPromptStale(formState, result));
-  const nav = [...sections.map(({ id, title }) => ({ id, title })), { id: 'watch-result', title: 'Ma demande de plan de veille' }];
+  const nav = [...sections.map(({ id, title }) => ({ id, title })), { id: 'watch-result', title: 'Ma demande de plan de veille' }, { id: 'watch-schedule', title: 'Planifier ma veille' }];
   function update(id: WatchFieldId, value: string | string[]) {
     formState = { ...formState, [id]: value };
     error = '';
   }
   function goTo(id: string) {
+    if (id === 'watch-schedule') scheduleExpanded = true;
     active = id;
     const element = document.getElementById(id);
     element?.focus({ preventScroll: true });
@@ -39,7 +41,7 @@
   }
   function cancelReset() { resetDialog.close(); resetTrigger?.focus(); }
   function reset() {
-    formState = createEmptyWatchState(); result = ''; error = '';
+    formState = createEmptyWatchState(); result = ''; error = ''; scheduleExpanded = false;
     resetDialog.close(); goTo(sections[0].id);
   }
   onMount(() => {
@@ -68,6 +70,7 @@
       <span class="eyebrow"><span class="small-dot"></span> UNE VEILLE UTILE À VOTRE ACTIVITÉ</span>
       <h1>Construire mon <span>plan de veille</span></h1>
       <p>Définissez votre sujet, découvrez des sources complémentaires et préparez un premier tri de leur pertinence avec l’aide de votre IA.</p>
+      <p>Vous pouvez ensuite préparer une tâche planifiée : une recherche récurrente avec synthèse sourcée ou un rappel. Retrouvez cette suite dans l’étape « Planifier ma veille ».</p>
       <p>PromptOS prépare une demande à copier dans votre assistant. La recherche et la création du plan se feront dans cet outil, selon ses capacités. Aucune recherche ni alerte n’est exécutée ici.</p>
       <details class="field-help" name="watch-introduction">
         <summary><span aria-hidden="true">ⓘ</span> Comprendre la recherche et l’évaluation des sources <span class="help-chevron" aria-hidden="true">⌄</span></summary>
@@ -97,10 +100,10 @@
         <div class="generation-bar"><div><strong>Vos repères et une méthode explicite.</strong><p>Les choix renseignés sont associés aux règles de recherche et de vérification présentées dans l’introduction.</p></div><button type="submit" class="button primary" disabled={!candidate}>Générer ma demande <span aria-hidden="true">↗</span></button></div>
         {#if !candidate}<p class="empty-explanation">Indiquez au moins un repère ou sélectionnez une préférence pour construire votre demande.</p>{/if}
         {#if error}<p class="stale-message" role="alert">{error}</p>{/if}
-        <WatchPlanResult {result} {stale} onmodify={() => goTo(sections[0].id)} onreset={askReset} />
+        <WatchPlanResult {result} {stale} onmodify={() => goTo(sections[0].id)} onreset={askReset} onplan={() => goTo('watch-schedule')} />
       </section>
     </form>
-    {#if result}<WatchSchedulePanel watchState={formState} {stale} />{/if}
+    {#key Boolean(result)}<WatchSchedulePanel watchState={formState} {stale} planReady={Boolean(result)} bind:expanded={scheduleExpanded} ongotoresult={() => goTo('watch-result')} />{/key}
     <div class="workshop-bottom"><span>Des sources à examiner, un premier classement à valider, une veille à faire évoluer.</span><a href="/exemples/recherche-documentaire/">Voir un exemple de recherche ↗</a></div>
   </div>
 </div>
