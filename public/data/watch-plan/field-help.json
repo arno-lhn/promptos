@@ -1,0 +1,176 @@
+[
+  {
+    "id": "watch-subject",
+    "title": "Mon sujet et mon activité",
+    "promptTitle": "SUJET ET ACTIVITÉ",
+    "description": "Définissez ce que vous souhaitez suivre et ce que cette veille doit vous aider à faire.",
+    "fields": [
+      {
+        "id": "topic",
+        "label": "Sur quel sujet voulez-vous faire votre veille ?",
+        "type": "textarea",
+        "help": "Le sujet est votre point de départ. Une question concrète facilite le choix des mots-clés et le tri des sources. Vous pouvez commencer sans connaître les sites à suivre.",
+        "placeholder": "Exemple : les évolutions des règles de paie qui concernent mon activité.",
+        "promptPrefix": "Sujet ou question de veille :"
+      },
+      {
+        "id": "activity",
+        "label": "Quelle est votre activité ou votre situation ?",
+        "type": "textarea",
+        "help": "Le même sujet peut être abordé différemment selon votre métier, votre secteur ou vos missions. Donnez uniquement les informations utiles, sans données confidentielles.",
+        "placeholder": "Exemple : je débute dans un service de paie d’une PME.",
+        "promptPrefix": "Mon activité et mon contexte :"
+      },
+      {
+        "id": "watchType",
+        "label": "Quel type de veille souhaitez-vous construire ?",
+        "type": "select",
+        "help": "Cette indication aide à orienter la recherche. Une veille réglementaire demande notamment de distinguer le texte officiel, son commentaire et son champ d’application.",
+        "placeholder": "Aucun choix — facultatif"
+      },
+      {
+        "id": "goals",
+        "label": "À quoi votre veille doit-elle servir ?",
+        "type": "checkbox",
+        "help": "Une veille utile aide à comprendre une évolution, prendre une décision ou agir. Sélectionnez les usages qui correspondent à votre besoin.",
+        "layout": "list"
+      }
+    ]
+  },
+  {
+    "id": "watch-scope",
+    "title": "Mon périmètre et mes repères",
+    "promptTitle": "PÉRIMÈTRE ET REPÈRES",
+    "description": "Précisez les limites de la recherche et les sources que vous connaissez déjà, si vous en avez.",
+    "fields": [
+      {
+        "id": "territory",
+        "label": "Quel territoire ou cadre doit être pris en compte ?",
+        "type": "textarea",
+        "help": "Pour une veille juridique, le territoire et le cadre applicable sont essentiels. Ne supposez pas qu’un texte d’un autre pays concerne votre activité. Si vous ne savez pas encore, l’assistant devra vous aider à le préciser.",
+        "placeholder": "Exemple : France, avec les textes européens pertinents pour mon activité.",
+        "promptPrefix": "Territoire et cadre à prendre en compte :"
+      },
+      {
+        "id": "keywords",
+        "label": "Quels mots-clés ou questions avez-vous déjà en tête ?",
+        "type": "textarea",
+        "help": "Ajoutez des expressions métier, des synonymes ou des questions. L’assistant pourra proposer des variantes et des requêtes à tester, sans limiter la recherche à vos seuls mots.",
+        "placeholder": "Exemple : bulletin de paie, cotisations, obligations employeur…",
+        "promptPrefix": "Mots-clés et questions de départ :"
+      },
+      {
+        "id": "knownSources",
+        "label": "Quelles sources connaissez-vous déjà ?",
+        "type": "textarea",
+        "help": "Vous pouvez indiquer un nom de site, un organisme, une newsletter ou une URL, de préférence une source par ligne. Les sources connues devront aussi être vérifiées et comparées aux nouvelles. Vous pouvez laisser ce champ vide.",
+        "placeholder": "Noms de sites ou d’organismes, liens, newsletters…",
+        "promptPrefix": "Sources que je connais déjà, à vérifier comme les autres :"
+      },
+      {
+        "id": "exclusions",
+        "label": "Que souhaitez-vous laisser hors de votre veille ?",
+        "type": "textarea",
+        "help": "Précisez les sujets, territoires ou contenus qui ne vous sont pas utiles. Cela aide à éviter une liste de sources trop générale.",
+        "placeholder": "Exemple : exclure les informations concernant les travailleurs indépendants.",
+        "promptPrefix": "Éléments hors périmètre :"
+      }
+    ]
+  },
+  {
+    "id": "watch-sources",
+    "title": "Trouver et évaluer mes sources",
+    "promptTitle": "RECHERCHE ET CHOIX DES SOURCES",
+    "description": "Complétez vos repères et préparez un premier tri argumenté des sources proposées.",
+    "fields": [
+      {
+        "id": "sourceTypes",
+        "label": "Quels types de sources voulez-vous explorer ?",
+        "type": "checkbox",
+        "help": "Varier les types de sources peut aider à découvrir de nouvelles pistes et à recouper une information. Une source officielle n’est pas automatiquement pertinente pour votre périmètre ; un commentaire spécialisé ne remplace pas le document primaire.",
+        "layout": "list"
+      },
+      {
+        "id": "discovery",
+        "label": "Par où souhaitez-vous commencer ?",
+        "type": "radio",
+        "help": "Vous n’avez pas besoin de connaître les bonnes sources à l’avance. Quel que soit le point de départ, les liens et la pertinence restent à contrôler.",
+        "layout": "list"
+      },
+      {
+        "id": "priorities",
+        "label": "Quels critères comptent particulièrement pour vous ?",
+        "type": "checkbox",
+        "help": "Ces choix renforcent vos priorités. Le prompt demandera dans tous les cas de distinguer pertinence pour votre besoin et indices de fiabilité, avec une justification et les limites de l’évaluation.",
+        "layout": "list"
+      }
+    ]
+  },
+  {
+    "id": "watch-routine",
+    "title": "Organiser ma veille",
+    "promptTitle": "ORGANISATION DE LA VEILLE",
+    "description": "Préparez une routine réaliste pour collecter, trier, vérifier et réutiliser les informations.",
+    "fields": [
+      {
+        "id": "frequency",
+        "label": "À quel rythme souhaitez-vous consulter votre veille ?",
+        "type": "select",
+        "help": "Le rythme doit tenir compte de l’évolution du sujet et de votre disponibilité. Un événement important peut justifier une vérification entre deux points réguliers.",
+        "placeholder": "Aucun choix — facultatif"
+      },
+      {
+        "id": "timeBudget",
+        "label": "Combien de temps pouvez-vous consacrer à une séance ?",
+        "type": "select",
+        "help": "Mieux vaut quelques sources bien choisies et une routine tenable qu’une collecte trop abondante. Ce budget concerne une séance, pas un abonnement ou un coût d’outil.",
+        "placeholder": "Aucun choix — facultatif"
+      },
+      {
+        "id": "channels",
+        "label": "Quels moyens de collecte vous conviennent ?",
+        "type": "checkbox",
+        "help": "Ces moyens sont des pistes à organiser. PromptOS ne configure ni alerte, ni abonnement, ni recherche automatique. Leur disponibilité devra être vérifiée dans les outils choisis.",
+        "layout": "list"
+      },
+      {
+        "id": "audience",
+        "label": "Qui utilisera les informations de cette veille ?",
+        "type": "textarea",
+        "help": "Indiquez si la veille est destinée à vous-même, une équipe, un responsable ou des apprenants. Cela aide à choisir le niveau de synthèse et le mode de partage.",
+        "placeholder": "Exemple : moi-même et les collaborateurs du service.",
+        "promptPrefix": "Destinataires et usage des résultats :"
+      }
+    ]
+  },
+  {
+    "id": "watch-output",
+    "title": "Adapter le résultat à mes besoins",
+    "promptTitle": "PRÉSENTATION ET CONTRAINTES",
+    "description": "Choisissez un format de travail et ajoutez vos contraintes, sans perdre la trace des sources.",
+    "fields": [
+      {
+        "id": "outputFormat",
+        "label": "Comment souhaitez-vous présenter votre plan ?",
+        "type": "radio",
+        "help": "Le format peut changer, mais les liens, les justifications et les limites de vérification doivent rester visibles. Vous pourrez reprendre le résultat dans votre exercice de formation.",
+        "layout": "list"
+      },
+      {
+        "id": "experience",
+        "label": "Quel est votre niveau pour organiser une veille ?",
+        "type": "radio",
+        "help": "Il s’agit de votre expérience de la recherche et de la veille. Le niveau choisi ne change pas l’exigence de vérification des sources.",
+        "layout": "list"
+      },
+      {
+        "id": "constraints",
+        "label": "Avez-vous d’autres contraintes ou attentes ?",
+        "type": "textarea",
+        "help": "Précisez par exemple une langue, l’accès à des ressources gratuites ou une consigne de votre exercice. Vos mots seront conservés ; évitez les informations confidentielles.",
+        "placeholder": "Exemple : je souhaite utiliser principalement des sources gratuites en français.",
+        "promptPrefix": "Autres contraintes et attentes :"
+      }
+    ]
+  }
+]

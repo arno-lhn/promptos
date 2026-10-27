@@ -1195,6 +1195,9 @@ legend {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
   gap: 24px;
 }
+.pathway-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
+}
 .resource-card {
   min-width: 0;
   border: 1px solid var(--line);
@@ -1395,6 +1398,95 @@ legend {
 .personalization-workshop .intro-lead {
   font-size: 1.125rem;
   color: var(--ink);
+}
+.watch-workshop .help-content ul {
+  padding-left: 24px;
+  margin-block: 12px 20px;
+  max-width: 75ch;
+}
+.watch-workshop .help-content li + li {
+  margin-top: 10px;
+}
+.schedule-body {
+  padding: var(--section-padding);
+}
+.schedule-body p {
+  max-width: 75ch;
+}
+.schedule-body > p + p,
+.schedule-body > button {
+  margin-top: 16px;
+}
+.schedule-form {
+  margin-top: 28px;
+}
+.schedule-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 24px;
+}
+.schedule-fields > * {
+  min-width: 0;
+}
+.schedule-wide {
+  grid-column: 1/-1;
+}
+.schedule-mode-help {
+  display: block;
+  color: var(--muted);
+  font-weight: 400;
+  margin-top: 4px;
+}
+.schedule-fields input:not([type="radio"]) {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  padding: 14px 16px;
+  border: 1px solid var(--control-line);
+  border-radius: 6px;
+  color: var(--ink);
+  background: var(--white);
+  font-size: 1rem;
+}
+.schedule-fields input::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+.schedule-readiness,
+.schedule-preview {
+  margin-top: 28px;
+  padding: 20px;
+  border-left: 3px solid var(--teal);
+  border-radius: 0 6px 6px 0;
+  background: #eef6f4;
+}
+.schedule-preview p + p {
+  margin-top: 12px;
+}
+.schedule-readiness p + p,
+.schedule-readiness > button {
+  margin-top: 16px;
+}
+.schedule-body ul {
+  padding-left: 24px;
+  max-width: 75ch;
+}
+.schedule-body li + li {
+  margin-top: 10px;
+}
+.schedule-step {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.schedule-step h3 {
+  font-size: 1.375rem;
+  letter-spacing: -0.025em;
+}
+.schedule-step > p,
+.schedule-step > .copy-output {
+  margin-top: 16px;
 }
 @media (min-width: 1450px) {
   .hero {

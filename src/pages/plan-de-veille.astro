@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WatchPlanWorkshop from '../components/watch/WatchPlanWorkshop.svelte';
+---
+<BaseLayout title="Construire mon plan de veille">
+  <noscript><div class="noscript-message">Activez JavaScript pour assembler vos repères en une demande de plan de veille. Les saisies restent dans votre navigateur et aucune recherche n’est effectuée par PromptOS.</div></noscript>
+  <WatchPlanWorkshop client:load />
+</BaseLayout>
