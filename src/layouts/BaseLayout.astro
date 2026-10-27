@@ -6,7 +6,7 @@ const navigation = [
   { href: '/atelier/', label: 'Créer un prompt' },
   { href: '/instructions-personnalisees/', label: 'Personnaliser mon IA' },
   { href: '/plan-de-veille/', label: 'Plan de veille' },
-  { href: '/exemples/', label: 'Exemples de prompts' },
+  { href: '/outils-ia/', label: 'Outils IA' },
 ];
 ---
 <!doctype html>
@@ -24,11 +24,11 @@ const navigation = [
     <header class="site-header">
       <div class="header-inner">
         <a href="/" class="brand" aria-label="PromptOS, accueil"><span class="brand-icon" aria-hidden="true">[<span>↗</span>]</span><span>Prompt<span class="brand-os">OS</span><span class="brand-dot">.</span></span></a>
-        <nav class="main-nav" aria-label="Navigation principale">{navigation.map(item => <a href={item.href} aria-current={Astro.url.pathname.startsWith(item.href) ? 'page' : undefined}>{item.label}</a>)}</nav>
+        <nav class="main-nav" aria-label="Navigation principale">{navigation.map(item => <a href={item.href} aria-current={Astro.url.pathname.startsWith(item.href) || (item.href === '/outils-ia/' && Astro.url.pathname.startsWith('/exemples/')) ? 'page' : undefined}>{item.label}</a>)}</nav>
         <span class="header-tag"><span class="local-dot"></span> L’intention avant la formule.</span>
       </div>
     </header>
     <main id="contenu"><slot /></main>
-    <footer class="site-footer"><div class="footer-inner"><a class="footer-brand" href="/">PromptOS<span>.</span></a><p>Apprendre à demander, pour mieux créer.</p><span>Atelier pédagogique · Version 1.5</span></div></footer>
+    <footer class="site-footer"><div class="footer-inner"><a class="footer-brand" href="/">PromptOS<span>.</span></a><p>Apprendre à demander, pour mieux créer.</p><span>Atelier pédagogique · Version 1.6</span></div></footer>
   </body>
 </html>
