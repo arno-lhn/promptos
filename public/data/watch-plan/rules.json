@@ -1,0 +1,43 @@
+{
+  "introduction": "Aide-moi à construire un plan de veille utile à mon activité, à partir des repères ci-dessous. Je souhaite rechercher des informations, découvrir des sources complémentaires et organiser un suivi réaliste. Ne te limite pas à rédiger un prompt : propose le plan et effectue une première recherche uniquement si tes outils le permettent.",
+  "summary": [
+    "Rechercher des sources complémentaires, sans considérer les sources connues comme déjà validées.",
+    "Fournir des liens directs, des références datées et le statut réel de leur vérification.",
+    "Évaluer séparément la pertinence pour ma veille et les indices de fiabilité, avec une justification.",
+    "Proposer une routine de collecte, de tri, de vérification et de réévaluation des sources."
+  ],
+  "methodology": [
+    "Si le sujet, l’activité ou le territoire nécessaire à la recherche n’est pas assez défini, pose jusqu’à trois questions ciblées avant de rechercher. Ne choisis pas un secteur ou un pays à ma place. Signale toute hypothèse restante.",
+    "Annonce d’abord tes capacités réelles : accès au Web et possibilité de consulter les pages. Si tu ne peux pas rechercher ou ouvrir une source, indique-le et propose un plan provisoire, des familles de sources et des requêtes à tester. Ne présente aucune piste non consultée comme une source vérifiée.",
+    "Si tu disposes des outils nécessaires, effectue une première recherche ciblée, examine les sources déjà indiquées et découvre des sources nouvelles, complémentaires et diversifiées. Distingue explicitement « source connue » et « nouvelle source ». Ne t’arrête pas aux premiers résultats et dédoublonne les reprises d’un même document.",
+    "Pour chaque source retenue, donne le titre exact de la page ou du document, l’auteur ou l’organisme éditeur, le type de source et une URL directe vers le contenu pertinent. Distingue le site à suivre du document utilisé comme preuve. Vérifie que le contenu consulté correspond au sujet ; un résultat de moteur de recherche ou une page d’accueil ne suffit pas à prouver une affirmation.",
+    "Indique les dates de publication et de mise à jour lorsqu’elles sont disponibles, la date réelle de consultation et le statut « consultée », « accès partiel » ou « non consultée — à vérifier ». Si une donnée n’est pas accessible, écris « non disponible » ou « à vérifier ». N’invente aucun lien, auteur, titre, date, abonnement, flux ou référence. Ne prétends pas avoir consulté une page inaccessible.",
+    "Lorsque tu présentes une information importante, place sa référence à proximité de l’affirmation, avec le lien exact et, si possible, le passage, l’article ou la section qui l’étaye. Distingue les faits documentés, les interprétations et les hypothèses. Recoupe les points importants avec des sources indépendantes ou primaires et signale les désaccords.",
+    "Évalue la pertinence de chaque source par rapport au sujet, à l’activité, au territoire et à l’actualité recherchée : « forte », « moyenne », « faible » ou « non évaluable ». Justifie ce premier niveau de pertinence par des éléments observables et explique son apport concret. S’il manque des informations ou si le contenu n’a pas pu être examiné, laisse l’évaluation « non évaluable — à vérifier ». Ce classement est provisoire et doit être validé par l’utilisateur ; ce n’est pas une note objective.",
+    "Évalue séparément les indices de fiabilité : auteur identifiable et compétent, origine primaire ou secondaire, preuves et références, dates, transparence éditoriale, intérêts commerciaux éventuels et recoupements. Explique les limites et les vérifications restantes. Une forte pertinence ne prouve pas la fiabilité ; une source officielle peut être hors périmètre.",
+    "Si la veille comporte une dimension réglementaire ou juridique, identifie le territoire et le cadre applicable, privilégie les textes et organismes officiels pertinents et distingue le texte primaire du commentaire. Sépare les textes en vigueur, les projets et les annonces ; vérifie les dates de publication, de mise à jour et d’entrée en vigueur ainsi que la portée pour l’activité. N’affirme pas l’applicabilité d’un texte non vérifié. Les synthèses ne constituent pas une validation de conformité : indique les points à faire confirmer avant une décision.",
+    "Respecte mes limites de temps et de moyens. Ne prétends pas créer des alertes, programmer des tâches, effectuer une surveillance continue ou souscrire à une newsletter. Propose les étapes de configuration à réaliser par l’utilisateur uniquement si les fonctions des outils et des sources ont été vérifiées."
+  ],
+  "expectedOutput": [
+    "1. Un cadrage bref : sujet, questions de veille, objectifs, activité, périmètre, destinataires et points encore à préciser.",
+    "2. Une stratégie de recherche : mots-clés, synonymes, requêtes concrètes à tester, types de sources et lacunes de ma sélection initiale. Explique comment chercher au-delà des sites que je connais déjà.",
+    "3. Un registre des sources connues et nouvelles : titre, auteur ou éditeur, type, URL directe, statut de vérification, date de consultation et dates disponibles du contenu. Sépare les pistes non consultées des sources effectivement examinées. Préfère une sélection initiale courte et justifiée à une longue liste de liens.",
+    "4. Une grille d’évaluation distincte et lisible : source, pertinence provisoire, justification liée à mon besoin, indices de fiabilité, limites et action proposée (« suivre », « recouper », « écarter » ou « vérifier avant de décider »). Si tu présentes des informations issues de la première recherche, associe chacune à sa référence vérifiable.",
+    "5. Un plan opérationnel : quoi surveiller, où et comment collecter, à quel rythme, avec quel budget de temps, comment trier et consigner les références, qui valide et à qui partager. Si ces choix ne sont pas renseignés, propose des options explicites à valider, sans inventer mes contraintes.",
+    "6. Des prochaines étapes : premières actions à réaliser, éléments à vérifier manuellement et moment ou événement qui justifiera une réévaluation des sources et du périmètre. Aide-moi à réduire les doublons et les informations peu utiles."
+  ],
+  "evaluation": [
+    {
+      "title": "Pertinence pour ma veille",
+      "text": "La source répond-elle à mon sujet et à mes questions ? Est-elle utile à mon activité, à mon territoire et à la période que je souhaite suivre ? Le premier classement doit être justifié et rester révisable."
+    },
+    {
+      "title": "Indices de fiabilité",
+      "text": "Qui publie ? Sur quelles preuves ? À quelle date ? La source est-elle primaire ou commente-t-elle un autre document ? Les intérêts éventuels et les limites doivent être visibles."
+    },
+    {
+      "title": "Vérification effective",
+      "text": "L’assistant a-t-il réellement ouvert le contenu ? Le lien mène-t-il au document annoncé ? Une référence non consultée reste une piste à vérifier, même si son nom semble crédible."
+    }
+  ]
+}

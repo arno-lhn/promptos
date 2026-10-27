@@ -1,0 +1,310 @@
+{
+  "watchType": [
+    {
+      "id": "regulatory",
+      "label": "Réglementaire et juridique",
+      "promptText": "La veille porte sur les évolutions réglementaires et juridiques utiles à mon activité.",
+      "active": true
+    },
+    {
+      "id": "sector",
+      "label": "Actualités de mon secteur",
+      "promptText": "La veille porte sur les évolutions et les actualités de mon secteur professionnel.",
+      "active": true
+    },
+    {
+      "id": "technical",
+      "label": "Technologies et pratiques professionnelles",
+      "promptText": "La veille porte sur les technologies, outils et pratiques utiles à mon activité.",
+      "active": true
+    },
+    {
+      "id": "scientific",
+      "label": "Scientifique et documentaire",
+      "promptText": "La veille porte sur les connaissances, études et publications concernant mon sujet.",
+      "active": true
+    },
+    {
+      "id": "competitive",
+      "label": "Marché et acteurs de mon secteur",
+      "promptText": "La veille porte sur les tendances du marché et les acteurs de mon secteur, à partir d’informations publiques.",
+      "active": true
+    },
+    {
+      "id": "general",
+      "label": "Un autre sujet qui m’intéresse",
+      "promptText": "La veille porte sur le sujet d’intérêt que je précise dans mon cadrage.",
+      "active": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "updates",
+      "label": "Repérer les nouveautés importantes",
+      "promptText": "Aide-moi à repérer les nouveautés importantes pour mon sujet.",
+      "active": true
+    },
+    {
+      "id": "practice",
+      "label": "Adapter mes pratiques professionnelles",
+      "promptText": "Aide-moi à identifier les informations pouvant conduire à adapter mes pratiques professionnelles, après vérification.",
+      "active": true
+    },
+    {
+      "id": "understand",
+      "label": "Comprendre les évolutions",
+      "promptText": "Aide-moi à comprendre les évolutions et leurs conséquences possibles pour mon activité.",
+      "active": true
+    },
+    {
+      "id": "decide",
+      "label": "Préparer une décision",
+      "promptText": "Aide-moi à réunir des informations vérifiables pour préparer mes décisions.",
+      "active": true
+    },
+    {
+      "id": "share",
+      "label": "Partager les informations utiles",
+      "promptText": "Aide-moi à sélectionner et à partager les informations utiles à mes destinataires.",
+      "active": true
+    },
+    {
+      "id": "learn",
+      "label": "Développer mes connaissances",
+      "promptText": "Aide-moi à développer mes connaissances et à identifier les points à approfondir.",
+      "active": true
+    }
+  ],
+  "sourceTypes": [
+    {
+      "id": "official",
+      "label": "Textes et publications officiels",
+      "promptText": "Explore les textes, publications et documents primaires officiels pertinents pour ma veille.",
+      "active": true
+    },
+    {
+      "id": "institutions",
+      "label": "Institutions et organismes de référence",
+      "promptText": "Explore les institutions et les organismes de référence de mon domaine.",
+      "active": true
+    },
+    {
+      "id": "professional",
+      "label": "Organisations et réseaux professionnels",
+      "promptText": "Explore les organisations, associations et réseaux professionnels pertinents pour mon activité.",
+      "active": true
+    },
+    {
+      "id": "research",
+      "label": "Publications scientifiques et études",
+      "promptText": "Explore les publications scientifiques et les études en identifiant leurs auteurs, leur méthode et leurs limites.",
+      "active": true
+    },
+    {
+      "id": "specialist",
+      "label": "Presse et médias spécialisés",
+      "promptText": "Explore les médias spécialisés en distinguant information, opinion et contenu promotionnel.",
+      "active": true
+    },
+    {
+      "id": "experts",
+      "label": "Experts et retours de terrain",
+      "promptText": "Explore des experts identifiables et des retours de terrain, en les distinguant des preuves établies.",
+      "active": true
+    },
+    {
+      "id": "international",
+      "label": "Sources internationales pertinentes",
+      "promptText": "Explore les sources internationales utiles, en expliquant les limites de leur transposition à mon territoire.",
+      "active": true
+    }
+  ],
+  "discovery": [
+    {
+      "id": "extend",
+      "label": "Compléter les sources que je connais",
+      "promptText": "Pars des sources que j’ai indiquées, si j’en ai fourni, puis recherche des sources complémentaires et explique leur apport.",
+      "active": true
+    },
+    {
+      "id": "discover",
+      "label": "Découvrir des sources en partant de mon sujet",
+      "promptText": "Construis une première sélection diversifiée de sources à partir de mon sujet et de mon activité.",
+      "active": true
+    },
+    {
+      "id": "review",
+      "label": "Réexaminer et améliorer ma sélection",
+      "promptText": "Examine ma sélection de départ, si elle est fournie, repère les lacunes et propose des améliorations justifiées.",
+      "active": true
+    }
+  ],
+  "priorities": [
+    {
+      "id": "topic",
+      "label": "Correspondance précise avec mon sujet",
+      "promptText": "Accorde une attention particulière à la correspondance précise entre chaque source et mon sujet.",
+      "active": true
+    },
+    {
+      "id": "territory",
+      "label": "Application à mon activité et à mon territoire",
+      "promptText": "Accorde une attention particulière à l’application réelle de chaque source à mon activité et à mon territoire.",
+      "active": true
+    },
+    {
+      "id": "freshness",
+      "label": "Fraîcheur et mises à jour",
+      "promptText": "Accorde une attention particulière aux dates, à l’actualité du contenu et aux indices de mise à jour.",
+      "active": true
+    },
+    {
+      "id": "primary",
+      "label": "Accès au document d’origine",
+      "promptText": "Accorde une attention particulière à l’accès au document d’origine et à la traçabilité des affirmations.",
+      "active": true
+    },
+    {
+      "id": "independence",
+      "label": "Indépendance et transparence de l’auteur",
+      "promptText": "Accorde une attention particulière à l’auteur, à ses intérêts éventuels et à la transparence de la publication.",
+      "active": true
+    },
+    {
+      "id": "access",
+      "label": "Facilité d’accès et de compréhension",
+      "promptText": "Accorde une attention particulière à l’accès effectif aux contenus et à leur compréhension, sans confondre simplicité et fiabilité.",
+      "active": true
+    }
+  ],
+  "frequency": [
+    {
+      "id": "daily",
+      "label": "Chaque jour",
+      "promptText": "Propose un point de veille quotidien.",
+      "active": true
+    },
+    {
+      "id": "weekly",
+      "label": "Chaque semaine",
+      "promptText": "Propose un point de veille hebdomadaire.",
+      "active": true
+    },
+    {
+      "id": "fortnightly",
+      "label": "Toutes les deux semaines",
+      "promptText": "Propose un point de veille toutes les deux semaines.",
+      "active": true
+    },
+    {
+      "id": "monthly",
+      "label": "Chaque mois",
+      "promptText": "Propose un point de veille mensuel.",
+      "active": true
+    },
+    {
+      "id": "events",
+      "label": "À chaque évolution ou événement important",
+      "promptText": "Propose un suivi déclenché par les évolutions ou événements importants, avec un contrôle périodique à définir.",
+      "active": true
+    }
+  ],
+  "timeBudget": [
+    {
+      "id": "quarter",
+      "label": "Environ 15 minutes",
+      "promptText": "Adapte chaque séance de veille à un budget d’environ 15 minutes.",
+      "active": true
+    },
+    {
+      "id": "half",
+      "label": "Environ 30 minutes",
+      "promptText": "Adapte chaque séance de veille à un budget d’environ 30 minutes.",
+      "active": true
+    },
+    {
+      "id": "hour",
+      "label": "Environ 1 heure",
+      "promptText": "Adapte chaque séance de veille à un budget d’environ une heure.",
+      "active": true
+    },
+    {
+      "id": "two-hours",
+      "label": "Environ 2 heures",
+      "promptText": "Adapte chaque séance de veille à un budget d’environ deux heures.",
+      "active": true
+    }
+  ],
+  "channels": [
+    {
+      "id": "bookmarks",
+      "label": "Consulter une liste de sites ou de favoris",
+      "promptText": "Propose une liste organisée de sites ou de favoris à consulter manuellement.",
+      "active": true
+    },
+    {
+      "id": "rss",
+      "label": "Utiliser des flux RSS lorsqu’ils existent",
+      "promptText": "Propose des flux RSS uniquement si leur existence et leur accessibilité peuvent être vérifiées.",
+      "active": true
+    },
+    {
+      "id": "newsletters",
+      "label": "Recevoir des newsletters pertinentes",
+      "promptText": "Propose des newsletters pertinentes en précisant ce qui reste à vérifier avant un abonnement.",
+      "active": true
+    },
+    {
+      "id": "alerts",
+      "label": "Utiliser des alertes de recherche",
+      "promptText": "Propose des requêtes pour des alertes de recherche si l’outil choisi propose cette possibilité, sans prétendre les avoir créées.",
+      "active": true
+    },
+    {
+      "id": "ai",
+      "label": "Faire des points de recherche avec mon IA",
+      "promptText": "Propose des sessions de recherche que je pourrai déclencher dans mon assistant, selon ses capacités effectives.",
+      "active": true
+    }
+  ],
+  "outputFormat": [
+    {
+      "id": "detailed",
+      "label": "Un plan expliqué étape par étape",
+      "promptText": "Présente un plan de veille expliqué étape par étape, avec les tableaux de sources et d’évaluation.",
+      "active": true
+    },
+    {
+      "id": "sheet",
+      "label": "Une fiche de travail synthétique",
+      "promptText": "Présente une fiche de travail synthétique, sans supprimer les liens, les justifications et les points à vérifier.",
+      "active": true
+    },
+    {
+      "id": "tables",
+      "label": "Des tableaux pour organiser mes actions",
+      "promptText": "Privilégie des tableaux lisibles pour organiser les sources, leur évaluation et les actions de veille.",
+      "active": true
+    }
+  ],
+  "experience": [
+    {
+      "id": "beginner",
+      "label": "Je débute",
+      "promptText": "Explique les termes utiles et guide-moi dans les premières étapes, car je débute dans l’organisation d’une veille.",
+      "active": true
+    },
+    {
+      "id": "some-practice",
+      "label": "J’ai déjà quelques repères",
+      "promptText": "Appuie-toi sur mes premiers repères et explicite les améliorations proposées à ma méthode.",
+      "active": true
+    },
+    {
+      "id": "comfortable",
+      "label": "Je suis déjà à l’aise",
+      "promptText": "Propose une organisation directement exploitable et explicite les arbitrages, car je suis déjà à l’aise avec la veille.",
+      "active": true
+    }
+  ]
+}
