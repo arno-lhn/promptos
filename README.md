@@ -1,6 +1,6 @@
-# PromptOS — Version 1.3
+# PromptOS — Version 1.4
 
-Ateliers pédagogiques de construction de prompts et d’instructions personnalisées, avec une bibliothèque de douze exemples, développés avec **Astro 7, Svelte 5 et TypeScript**. L’application assemble de façon déterministe les choix et les mots de l’utilisateur. Elle ne contacte aucune IA et ne nécessite ni compte, ni backend, ni base de données.
+Ateliers pédagogiques de construction de prompts, d’instructions personnalisées et de demandes de plans de veille, avec une bibliothèque de douze exemples, développés avec **Astro 7, Svelte 5 et TypeScript**. L’application assemble de façon déterministe les choix et les mots de l’utilisateur. Elle ne contacte aucune IA et ne nécessite ni compte, ni backend, ni base de données.
 
 ## Démarrer
 
@@ -41,6 +41,24 @@ Si le presse-papiers est indisponible, le texte est sélectionné et une consign
 
 Ces instructions orientent un assistant sans garantir son comportement ni lui donner de nouvelles capacités. Leur emplacement dépend de la plateforme choisie. Les saisies restent en mémoire dans la page et sont perdues au rechargement ; éviter les informations sensibles dans des instructions réutilisables.
 
+## Construire un plan de veille
+
+« Plan de veille » ouvre `/plan-de-veille/`. Cinq étapes regroupent **18 champs facultatifs et 48 options** : sujet et activité, périmètre et repères, recherche de sources, organisation de la veille et présentation du résultat. Les sources connues peuvent être indiquées par leur nom ou leur URL ; il n’est pas nécessaire d’en connaître pour commencer. Un seul repère ou choix suffit pour générer une demande.
+
+Le résultat est un **prompt à copier dans l’assistant IA choisi**, qui devra construire le plan et effectuer une première recherche si ses outils le permettent. PromptOS ne consulte aucun site, n’évalue aucun lien et ne programme aucune surveillance. La méthode commune, expliquée dans l’introduction, demande :
+
+- Une recherche au-delà des sources connues et une distinction entre sources initiales et nouvelles.
+- Des titres, auteurs ou éditeurs, URL directes, dates et statuts réels de consultation ; aucune référence inventée.
+- Une évaluation provisoire de la pertinence (« forte », « moyenne », « faible » ou « non évaluable »), justifiée par le sujet, l’activité et le périmètre.
+- Un examen séparé des indices de fiabilité et des limites ; une source pertinente n’est pas nécessairement fiable, et une source officielle peut être hors périmètre.
+- Une stratégie de recherche, un registre des sources, une grille d’évaluation et une routine de collecte, tri, vérification, partage et réévaluation.
+
+La méthode prévoit explicitement les assistants sans accès au Web, les contenus inaccessibles et les informations à vérifier manuellement. Pour un sujet juridique ou réglementaire, elle demande de préciser le territoire, de distinguer textes en vigueur, projets et commentaires, et de vérifier les dates d’application avant une décision. L’apprenant doit ouvrir les références et valider le classement proposé. Les consignes particulières de son exercice peuvent être ajoutées dans les contraintes.
+
+La copie avec repli manuel, l’obsolescence après modification et la réinitialisation confirmée reprennent le fonctionnement des autres ateliers. Aucun choix n’est présélectionné et les textes libres restent inchangés, hors normalisation des retours à la ligne et espaces aux extrémités.
+
+Les options, aides et règles communes sont dans `public/data/watch-plan/` ; leur validation est intégrée au build. Les moteurs des autres ateliers sont inchangés. La grille pédagogique s’appuie notamment sur les repères d’[évaluation des sources de HEC Montréal](https://libguides.hec.ca/evaluer) et sur les [limites des systèmes d’IA générative expliquées par la CNIL](https://www.cnil.fr/fr/les-questions-reponses-de-la-cnil-sur-lutilisation-dun-systeme-dia-generative).
+
 ## Bibliothèque d’exemples
 
 `/exemples/` propose douze cas pratiques et huit catégories. La recherche locale porte sur le titre, la description, le besoin et les mots-clés ; elle ignore la casse et les accents et se combine avec la catégorie. Une action permet de réinitialiser les filtres, y compris quand aucun résultat ne correspond.
@@ -56,10 +74,10 @@ npm run check
 npm run build
 ```
 
-- `npm test` : 52 tests avec le moteur natif de Node, dont les 20 tests historiques du moteur de prompts, ainsi que la personnalisation, les combinaisons de préférences, les douze exemples, les filtres et la validation des données.
+- `npm test` : 79 tests avec le moteur natif de Node : les 52 tests existants et 27 tests du plan de veille, couvrant aussi les règles de recherche, la traçabilité, la distinction pertinence/fiabilité et le mode sans Web.
 - `npm run check` : `astro check`, puis `svelte-check` pour vérifier explicitement les composants Svelte.
-- `npm run validate:data` : validation des 14 catalogues et 17 champs initiaux, des 17 catalogues et 20 champs de personnalisation, des huit catégories et des douze exemples.
-- `npm run build` : validation des données, puis génération de 16 pages statiques dans `dist/`.
+- `npm run validate:data` : validation des catalogues et champs des trois ateliers, des règles du plan de veille, des huit catégories et des douze exemples.
+- `npm run build` : validation des données, puis génération de 17 pages statiques dans `dist/`.
 
 L’historique des contrôles de la première version se trouve dans [docs/validation.md](docs/validation.md).
 
@@ -74,12 +92,14 @@ npm run preview
 ```text
 public/data/                  14 catalogues JSON + field-help.json
 public/data/personalization/  17 catalogues indépendants + field-help.json
+public/data/watch-plan/       Catalogues, aides et règles communes du plan de veille
 src/data/examples/            12 fiches JSON + categories.json
 src/layouts/BaseLayout.astro  Structure, navigation et pied de page
-src/pages/                    Accueil, deux ateliers, catalogue et route statique des exemples
+src/pages/                    Accueil, trois ateliers, catalogue et route statique des exemples
 src/components/ui/            Champ réutilisable, aide dépliable et copie avec repli
 src/components/workshop/      État centralisé, navigation, résultat, copie et confirmation
 src/components/personalization/ État et résultat du nouvel atelier
+src/components/watch/         État et résultat de l’atelier de plan de veille
 src/components/examples/      Catalogue, recherche et catégories
 src/lib/prompt-types.ts       Types et état initial
 src/lib/data-loader.ts        Import et validation des données à la compilation
@@ -88,11 +108,12 @@ src/lib/prompt-builder.ts     Fonction pure buildPrompt(formState)
 src/lib/personalization-*.ts   Types, données, validation et moteur distinct de personnalisation
 src/lib/examples.ts           Types, validation et filtre local des exemples
 src/lib/examples-data.ts      Découverte des fichiers JSON à la compilation
+src/lib/watch-plan-*.ts       Types, validation, données et moteur distinct pour la veille
 src/styles/global.css        Identité et mise en page responsive
 tests/                        Tests du moteur et des configurations
 ```
 
-Chaque atelier possède un composant racine Svelte hydraté avec `client:load`. Les moteurs et données des deux ateliers restent distincts. Le composant de champ reçoit explicitement ses options ; les aides et les styles sont partagés. Aucun composant ne contient de liste de choix pédagogique.
+Chaque atelier possède un composant racine Svelte hydraté avec `client:load`. Les moteurs et données des trois ateliers restent distincts. Le composant de champ reçoit explicitement ses options ; les aides et les styles sont partagés. Aucun composant ne contient de liste de choix pédagogique.
 
 ## Modifier les choix pédagogiques
 
@@ -132,7 +153,7 @@ Les polices Space Grotesk et DM Sans sont incluses dans le build via Fontsource.
 
 ## Déploiement statique
 
-Après `npm run build`, copier **tout le contenu de `dist/`** sur un hébergement statique, avec `index.html` comme document par défaut. Les routes principales sont `/`, `/atelier/`, `/instructions-personnalisees/` et `/exemples/`, accompagnées des douze pages `/exemples/[slug]/`. Aucun serveur Node n’est nécessaire en production. Servir le site en HTTPS pour la copie dans le presse-papiers.
+Après `npm run build`, copier **tout le contenu de `dist/`** sur un hébergement statique, avec `index.html` comme document par défaut. Les routes principales sont `/`, `/atelier/`, `/instructions-personnalisees/`, `/plan-de-veille/` et `/exemples/`, accompagnées des douze pages `/exemples/[slug]/`. Aucun serveur Node n’est nécessaire en production. Servir le site en HTTPS pour la copie dans le presse-papiers.
 
 La configuration actuelle suppose un hébergement à la racine d’un domaine. Un hébergement dans un sous-dossier demanderait d’adapter `base` et les liens internes.
 

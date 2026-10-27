@@ -1195,6 +1195,9 @@ legend {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
   gap: 24px;
 }
+.pathway-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
+}
 .resource-card {
   min-width: 0;
   border: 1px solid var(--line);
@@ -1395,6 +1398,14 @@ legend {
 .personalization-workshop .intro-lead {
   font-size: 1.125rem;
   color: var(--ink);
+}
+.watch-workshop .help-content ul {
+  padding-left: 24px;
+  margin-block: 12px 20px;
+  max-width: 75ch;
+}
+.watch-workshop .help-content li + li {
+  margin-top: 10px;
 }
 @media (min-width: 1450px) {
   .hero {
