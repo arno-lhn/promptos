@@ -5,6 +5,7 @@
   import { createEmptyWatchState, type WatchCatalogId, type WatchFieldId, type WatchState } from '../../lib/watch-plan-types.ts';
   import WorkshopField from '../ui/WorkshopField.svelte';
   import WatchPlanResult from './WatchPlanResult.svelte';
+  import WatchSchedulePanel from './WatchSchedulePanel.svelte';
 
   let formState = $state<WatchState>(createEmptyWatchState());
   let result = $state('');
@@ -99,10 +100,11 @@
         <WatchPlanResult {result} {stale} onmodify={() => goTo(sections[0].id)} onreset={askReset} />
       </section>
     </form>
+    {#if result}<WatchSchedulePanel watchState={formState} {stale} />{/if}
     <div class="workshop-bottom"><span>Des sources à examiner, un premier classement à valider, une veille à faire évoluer.</span><a href="/exemples/recherche-documentaire/">Voir un exemple de recherche ↗</a></div>
   </div>
 </div>
 <dialog bind:this={resetDialog} class="reset-dialog" aria-labelledby="reset-watch-title" oncancel={event => { event.preventDefault(); cancelReset(); }}>
-  <span class="eyebrow">REPARTIR D’UNE PAGE BLANCHE</span><h2 id="reset-watch-title">Recommencer votre plan de veille ?</h2><p>Vos repères, vos choix et la demande générée seront effacés. Cette action ne peut pas être annulée.</p>
+  <span class="eyebrow">REPARTIR D’UNE PAGE BLANCHE</span><h2 id="reset-watch-title">Recommencer votre plan de veille ?</h2><p>Vos repères, vos choix, la demande générée et la préparation d’une tâche planifiée seront effacés. Cette action ne peut pas être annulée.</p>
   <div class="result-actions"><button type="button" class="button secondary" onclick={cancelReset}>Conserver mes choix</button><button type="button" class="button primary" onclick={reset}>Tout effacer</button></div>
 </dialog>

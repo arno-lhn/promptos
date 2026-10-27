@@ -1,0 +1,126 @@
+{
+  "modes": [
+    {
+      "id": "research",
+      "label": "Une recherche de veille avec une synthèse",
+      "help": "La tâche doit réellement consulter des sources et produire un résultat. Vérifiez que la recherche Web est disponible lors des exécutions planifiées."
+    },
+    {
+      "id": "reminder",
+      "label": "Un rappel pour effectuer ma veille",
+      "help": "La tâche vous rappelle de consulter votre veille. Elle ne prétend pas avoir recherché ni analysé des nouveautés."
+    }
+  ],
+  "cadences": [
+    {
+      "id": "daily",
+      "label": "Chaque jour"
+    },
+    {
+      "id": "weekdays",
+      "label": "Du lundi au vendredi"
+    },
+    {
+      "id": "weekly",
+      "label": "Chaque semaine"
+    },
+    {
+      "id": "monthly",
+      "label": "Chaque mois"
+    }
+  ],
+  "weekdays": [
+    {
+      "id": "monday",
+      "label": "lundi"
+    },
+    {
+      "id": "tuesday",
+      "label": "mardi"
+    },
+    {
+      "id": "wednesday",
+      "label": "mercredi"
+    },
+    {
+      "id": "thursday",
+      "label": "jeudi"
+    },
+    {
+      "id": "friday",
+      "label": "vendredi"
+    },
+    {
+      "id": "saturday",
+      "label": "samedi"
+    },
+    {
+      "id": "sunday",
+      "label": "dimanche"
+    }
+  ],
+  "windows": [
+    {
+      "id": "24h",
+      "label": "Les dernières 24 heures",
+      "instruction": "Recherche les informations publiées ou mises à jour dans les dernières 24 heures."
+    },
+    {
+      "id": "7d",
+      "label": "Les 7 derniers jours",
+      "instruction": "Recherche les informations publiées ou mises à jour dans les 7 derniers jours."
+    },
+    {
+      "id": "30d",
+      "label": "Les 30 derniers jours",
+      "instruction": "Recherche les informations publiées ou mises à jour dans les 30 derniers jours."
+    },
+    {
+      "id": "since-run",
+      "label": "Depuis la dernière exécution, si son historique est accessible",
+      "instruction": "Examine la période depuis la dernière exécution dont la date est effectivement accessible. Si cette date ou cet historique ne sont pas disponibles, examine les 31 derniers jours et signale que la continuité et la nouveauté par rapport aux exécutions précédentes ne sont pas vérifiées."
+    }
+  ],
+  "limits": [
+    {
+      "id": "3",
+      "label": "3 informations au maximum"
+    },
+    {
+      "id": "5",
+      "label": "5 informations au maximum"
+    },
+    {
+      "id": "10",
+      "label": "10 informations au maximum"
+    }
+  ],
+  "setupRules": [
+    "Je souhaite créer une tâche planifiée correspondant au calendrier et au travail ci-dessous, après avoir testé les consignes dans cette conversation.",
+    "Avant toute création, vérifie que la planification est disponible dans ce compte et que les outils nécessaires seront accessibles pendant les exécutions planifiées. Un outil disponible dans une conversation ordinaire n’est pas à supposer disponible dans une tâche.",
+    "Montre-moi un récapitulatif : nom, mode choisi, travail exécuté, calendrier, heure locale, fuseau horaire, prochaine occurrence future, date de fin éventuelle, lieu du résultat et réglages de notification disponibles. Ne choisis pas une information manquante à ma place. Attends ensuite mon accord explicite avant de créer la tâche.",
+    "Après cet accord, si tes outils le permettent, crée effectivement la tâche : ne te limite pas à décrire les étapes. Si une tâche équivalente existe déjà, propose sa mise à jour plutôt qu’un doublon et demande mon accord. Si la création n’est pas possible, explique-le clairement et donne les étapes manuelles disponibles.",
+    "N’annonce « tâche créée » qu’après une confirmation effective de l’outil ou de l’interface. Affiche alors le calendrier enregistré, la prochaine exécution et le moyen de retrouver, modifier, mettre en pause ou supprimer la tâche. Ne crée aucune alerte ou tâche supplémentaire.",
+    "Enregistre uniquement la rubrique « TRAVAIL À RÉPÉTER » comme instructions de la tâche, avec ses repères et ses règles. Le calendrier appartient aux paramètres de planification. Les consignes de création et de confirmation de cette demande ne doivent jamais être réexécutées par la tâche."
+  ],
+  "researchRules": [
+    "Exécute réellement la recherche de veille décrite par les repères ci-dessous et fournis une synthèse sourcée. Chaque appel, y compris un test dans la conversation, correspond à une seule exécution. N’envoie pas seulement un rappel, ne rédige pas à nouveau un plan de veille et ne crée aucune planification depuis ces consignes de travail.",
+    "Recherche et ouvre effectivement les contenus accessibles avec tes outils. Distingue sources examinées et simples pistes. Pour chaque information retenue, donne le titre du document, son auteur ou éditeur, une URL directe, les dates de publication ou de mise à jour disponibles et la date réelle de consultation. N’invente aucune référence ni date et n’affirme pas avoir ouvert un contenu inaccessible.",
+    "Appuie chaque information sur sa référence et, si possible, le passage ou l’article pertinent. Distingue faits documentés, interprétations et hypothèses ; recoupe les points importants. Les sources déjà connues et celles retenues pour la tâche ne sont pas dispensées de vérification.",
+    "Attribue une pertinence provisoire « forte », « moyenne », « faible » ou « non évaluable », avec une justification liée au sujet, à l’activité et au territoire. Examine séparément les indices de fiabilité : auteur, origine primaire, preuves, dates, transparence et limites. Une source non consultée reste « non évaluable — à vérifier ».",
+    "Pour un sujet juridique ou réglementaire, vérifie le territoire et le cadre applicable ; distingue texte officiel et commentaire, texte en vigueur, projet et annonce. Indique les dates d’application vérifiées et les points à faire confirmer avant une décision. Ne conclus pas à une conformité sur la seule base d’un résumé.",
+    "Conserve le sujet et le périmètre à chaque exécution. Tu peux découvrir des sources complémentaires en justifiant leur apport, sans modifier silencieusement les critères de la veille.",
+    "Distingue les dates des contenus de la date de consultation. Si la date d’un contenu est inconnue, ne le présente pas comme nouveau dans la période choisie. Dédoublonne les reprises d’un même document. Compare aux résultats antérieurs uniquement si cet historique est réellement accessible ; sinon, précise que la nouveauté par rapport aux exécutions précédentes n’est pas vérifiée.",
+    "Présente les informations utiles, leur impact possible pour l’activité, leur pertinence justifiée, leurs références et les vérifications restantes. S’il n’y a aucun résultat pertinent dans la période et les sources effectivement examinées, indique cette absence limitée aux recherches effectuées ; ne prétends pas qu’aucune évolution n’existe.",
+    "Si une recherche est impossible ou partielle, signale l’échec ou les limites et ce qui reste à vérifier. Ne remplace pas discrètement la recherche demandée par un simple rappel.",
+    "Restitue le résultat dans l’outil qui exécute cette tâche. N’envoie aucun message à des tiers, ne souscris à aucun service et ne crée aucune autre tâche pendant une exécution."
+  ],
+  "reminderRules": [
+    "À chaque occurrence, rappelle-moi d’effectuer ma veille sur le sujet et le périmètre ci-dessous.",
+    "Rappelle brièvement les actions à réaliser : consulter les sources retenues, vérifier les liens et les dates, trier les informations pertinentes et consigner les références.",
+    "Ce mode est un rappel : n’affirme pas avoir effectué une recherche, consulté des sources ou identifié de nouvelles informations. Ne présente pas de synthèse fictive.",
+    "Présente le rappel dans cet outil, sans envoi à des tiers, sans abonnement et sans création d’une autre tâche."
+  ],
+  "researchCapability": "Pour le mode recherche, confirme expressément la disponibilité des outils de recherche et de consultation pendant les exécutions planifiées. S’ils ne sont pas disponibles, ne crée pas un rappel à la place : explique la limite et propose que je choisisse explicitement le mode rappel ou un autre outil.",
+  "documentationUrl": "https://developers.openai.com/training/walkthroughs/scheduled-tasks"
+}

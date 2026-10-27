@@ -3,6 +3,7 @@ import { personalizationCatalogs, personalizationSections } from '../src/lib/per
 import { validateExamples } from '../src/lib/examples.ts';
 import { readdirSync, readFileSync } from 'node:fs';
 import { watchCatalogs, watchSections } from '../src/lib/watch-plan-data.ts';
+import { watchScheduleData } from '../src/lib/watch-schedule.ts';
 console.log(
   `Données valides : ${Object.keys(catalogs).length} catalogues, ${Object.values(catalogs).flat().length} options actives, ${sections.flatMap((section) => section.fields).length} champs documentés.`,
 );
@@ -11,3 +12,4 @@ const directory = new URL('../src/data/examples/', import.meta.url);
 const examples = validateExamples(readdirSync(directory).filter(file => file.endsWith('.json') && file !== 'categories.json').map(file => JSON.parse(readFileSync(new URL(file, directory), 'utf8'))));
 console.log(`Exemples : ${examples.filter(example => example.active).length} fiches actives validées.`);
 console.log(`Plan de veille : ${Object.keys(watchCatalogs).length} catalogues, ${Object.values(watchCatalogs).flat().filter(option => option.active).length} options actives, ${watchSections.flatMap(section => section.fields).length} champs et méthode de recherche validés.`);
+console.log(`Planification : ${watchScheduleData.modes.length} modes et ${watchScheduleData.cadences.length} fréquences validés.`);

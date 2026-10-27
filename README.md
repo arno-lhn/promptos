@@ -1,4 +1,4 @@
-# PromptOS — Version 1.4
+# PromptOS — Version 1.5
 
 Ateliers pédagogiques de construction de prompts, d’instructions personnalisées et de demandes de plans de veille, avec une bibliothèque de douze exemples, développés avec **Astro 7, Svelte 5 et TypeScript**. L’application assemble de façon déterministe les choix et les mots de l’utilisateur. Elle ne contacte aucune IA et ne nécessite ni compte, ni backend, ni base de données.
 
@@ -59,6 +59,22 @@ La copie avec repli manuel, l’obsolescence après modification et la réinitia
 
 Les options, aides et règles communes sont dans `public/data/watch-plan/` ; leur validation est intégrée au build. Les moteurs des autres ateliers sont inchangés. La grille pédagogique s’appuie notamment sur les repères d’[évaluation des sources de HEC Montréal](https://libguides.hec.ca/evaluer) et sur les [limites des systèmes d’IA générative expliquées par la CNIL](https://www.cnil.fr/fr/les-questions-reponses-de-la-cnil-sur-lutilisation-dun-systeme-dia-generative).
 
+## Passer à une veille planifiée
+
+Après génération du plan, « Préparer une tâche planifiée » ouvre une suite facultative. Le premier prompt reste consacré à la construction du plan. Cette suite produit des instructions distinctes, autonomes, pour **exécuter la veille** plutôt que reconstruire son organisation à chaque occurrence.
+
+1. Relire le plan obtenu dans son assistant, examiner les sources et préciser le sujet dans PromptOS si nécessaire.
+2. Choisir une recherche avec synthèse ou un simple rappel, puis une fréquence, une heure et un fuseau explicites. Pour une recherche, choisir aussi la période à examiner ; elle est indépendante de la fréquence. Un jour est nécessaire pour une cadence hebdomadaire ou mensuelle (du 1 au 28). Nom, date de fin, sources retenues et taille de synthèse sont facultatifs.
+3. Copier les **instructions à tester** dans l’assistant et vérifier une exécution. Les sources proposées par l’assistant ne sont pas récupérées automatiquement : celles que l’apprenant retient peuvent être recopiées dans le champ prévu.
+4. Après un test satisfaisant, copier la **demande de planification** dans la même conversation. Elle demande de vérifier les capacités disponibles pendant les tâches, de présenter le calendrier et d’attendre l’accord de l’apprenant, puis de créer effectivement la tâche si possible. Elle prévoit aussi la saisie manuelle dans le formulaire de l’outil et évite les doublons.
+5. Vérifier l’enregistrement dans l’espace de planification, la prochaine occurrence, les notifications, puis les premiers résultats. Repérer comment modifier, suspendre et supprimer la tâche.
+
+Le [guide officiel OpenAI « Scheduled tasks »](https://developers.openai.com/training/walkthroughs/scheduled-tasks) décrit la démarche de test puis de planification. La disponibilité dépend du compte et de l’environnement ; l’existence d’une recherche Web dans une conversation ne garantit pas son accès pendant une tâche. Si la recherche planifiée est indisponible, la demande exige de l’expliquer et de laisser l’apprenant choisir un rappel ou un autre outil. Une description du calendrier n’est jamais présentée comme une preuve de création.
+
+Les instructions récurrentes reprennent le sujet et les repères utiles, demandent des références vérifiables, une pertinence justifiée et un examen distinct de la fiabilité. Elles prévoient l’échec ou l’absence de résultats sans inventer de nouveautés. La comparaison aux exécutions précédentes dépend d’un historique réellement accessible ; le mode « depuis la dernière exécution » prévoit à défaut une période de 31 jours et signale sa limite. Elles n’envoient aucun message à des tiers et ne créent aucune autre tâche. La demande d’activation reste séparée des instructions à enregistrer pour éviter de recréer la planification à chaque occurrence.
+
+Les réglages commencent vides. Un sujet explicite est requis uniquement pour préparer la tâche. Modifier les repères du plan désactive cette préparation et ses copies jusqu’à régénération ; recommencer efface aussi les réglages de planification. PromptOS ne se connecte à aucun compte, ne crée aucune tâche et ne vérifie pas les exécutions externes. Les données et règles de cette étape se trouvent dans `public/data/watch-plan/scheduling.json`, le moteur dans `src/lib/watch-schedule.ts`.
+
 ## Bibliothèque d’exemples
 
 `/exemples/` propose douze cas pratiques et huit catégories. La recherche locale porte sur le titre, la description, le besoin et les mots-clés ; elle ignore la casse et les accents et se combine avec la catégorie. Une action permet de réinitialiser les filtres, y compris quand aucun résultat ne correspond.
@@ -74,9 +90,9 @@ npm run check
 npm run build
 ```
 
-- `npm test` : 79 tests avec le moteur natif de Node : les 52 tests existants et 27 tests du plan de veille, couvrant aussi les règles de recherche, la traçabilité, la distinction pertinence/fiabilité et le mode sans Web.
+- `npm test` : 96 tests avec le moteur natif de Node : les 79 tests existants et 17 tests de préparation des tâches (calendrier, fuseaux, modes, contexte autonome, capacités, confirmation et validation).
 - `npm run check` : `astro check`, puis `svelte-check` pour vérifier explicitement les composants Svelte.
-- `npm run validate:data` : validation des catalogues et champs des trois ateliers, des règles du plan de veille, des huit catégories et des douze exemples.
+- `npm run validate:data` : validation des catalogues et champs des trois ateliers, des règles du plan de veille et de sa planification, des huit catégories et des douze exemples.
 - `npm run build` : validation des données, puis génération de 17 pages statiques dans `dist/`.
 
 L’historique des contrôles de la première version se trouve dans [docs/validation.md](docs/validation.md).
@@ -109,6 +125,7 @@ src/lib/personalization-*.ts   Types, données, validation et moteur distinct de
 src/lib/examples.ts           Types, validation et filtre local des exemples
 src/lib/examples-data.ts      Découverte des fichiers JSON à la compilation
 src/lib/watch-plan-*.ts       Types, validation, données et moteur distinct pour la veille
+src/lib/watch-schedule.ts     Validation du calendrier et consignes autonomes pour une tâche externe
 src/styles/global.css        Identité et mise en page responsive
 tests/                        Tests du moteur et des configurations
 ```
