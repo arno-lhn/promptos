@@ -1291,13 +1291,64 @@ legend {
   border: 1px dashed var(--control-line);
   border-radius: 12px;
 }
-.library-empty h2,
+.library-empty h3,
 .detail-section h2 {
   font-size: 1.6875rem;
 }
 .library-empty p,
 .library-empty button {
   margin-top: 20px;
+}
+.resource-jumps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 16px;
+  margin-bottom: 48px;
+}
+.resource-jumps a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  padding: 22px;
+  border: 1px solid var(--control-line);
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--ink);
+  text-decoration: none;
+}
+.resource-jumps a:hover {
+  background: #f0f9d6;
+  border-color: #526a0b;
+}
+.resource-jumps .eyebrow {
+  grid-column: 1/-1;
+}
+.resource-block {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 116px;
+}
+.resource-block-heading {
+  margin-bottom: 28px;
+}
+.resource-block-heading h2 {
+  margin-top: 12px;
+  font-size: clamp(1.625rem, 3vw, 2rem);
+  letter-spacing: -0.035em;
+}
+.resource-block-heading p,
+.resource-footnote {
+  margin-top: 16px;
+  max-width: 75ch;
+  color: var(--muted);
+}
+.resource-entry-note {
+  padding-left: 14px;
+  border-left: 3px solid var(--teal);
+}
+.resource-footnote {
+  margin-top: 40px;
 }
 .example-detail {
   max-width: 1120px;
@@ -1591,6 +1642,9 @@ legend {
   }
 }
 @media (max-width: 800px) {
+  .resource-block {
+    scroll-margin-top: 24px;
+  }
   :root {
     --header-height: 4.625rem;
   }

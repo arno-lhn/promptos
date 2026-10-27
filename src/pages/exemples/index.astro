@@ -1,12 +1,3 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import ExampleLibrary from '../../components/examples/ExampleLibrary.svelte';
-import { activeExamples } from '../../lib/examples-data.ts';
+return Astro.redirect('/outils-ia/#exemples-prompts', 301);
 ---
-<BaseLayout title="Exemples de prompts">
-  <div class="resource-page page-width">
-    <header class="resource-intro"><span class="eyebrow"><span class="small-dot"></span> COMPRENDRE PAR L’EXEMPLE</span><h1>Exemples de <span>prompts</span></h1><p>Découvrez des exemples de demandes structurées pour différents usages. Consultez leur construction, adaptez-les à votre situation et copiez-les dans l’IA de votre choix.</p><p>Des structures à comprendre et à adapter, sans formule magique.</p></header>
-    <noscript><p class="personal-data-note">Les douze exemples restent consultables. Activez JavaScript pour utiliser la recherche et les filtres.</p></noscript>
-    <ExampleLibrary examples={activeExamples} client:load />
-  </div>
-</BaseLayout>

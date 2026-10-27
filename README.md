@@ -1,4 +1,4 @@
-# PromptOS — Version 1.5
+# PromptOS — Version 1.6
 
 Ateliers pédagogiques de construction de prompts, d’instructions personnalisées et de demandes de plans de veille, avec une bibliothèque de douze exemples, développés avec **Astro 7, Svelte 5 et TypeScript**. L’application assemble de façon déterministe les choix et les mots de l’utilisateur. Elle ne contacte aucune IA et ne nécessite ni compte, ni backend, ni base de données.
 
@@ -75,9 +75,15 @@ Les instructions récurrentes reprennent le sujet et les repères utiles, demand
 
 Les réglages commencent vides. Un sujet explicite est requis uniquement pour préparer la tâche. Modifier les repères du plan désactive cette préparation et ses copies jusqu’à régénération ; recommencer efface aussi les réglages de planification. PromptOS ne se connecte à aucun compte, ne crée aucune tâche et ne vérifie pas les exécutions externes. Les données et règles de cette étape se trouvent dans `public/data/watch-plan/scheduling.json`, le moteur dans `src/lib/watch-schedule.ts`.
 
-## Bibliothèque d’exemples
+## Outils IA et bibliothèque d’exemples
 
-`/exemples/` propose douze cas pratiques et huit catégories. La recherche locale porte sur le titre, la description, le besoin et les mots-clés ; elle ignore la casse et les accents et se combine avec la catégorie. Une action permet de réinitialiser les filtres, y compris quand aucun résultat ne correspond.
+La page **« Outils IA »**, à l’adresse `/outils-ia/`, rassemble quatre blocs accessibles depuis des raccourcis : les douze exemples de prompts, sept outils IA, deux outils complémentaires et deux chaînes YouTube. Elle remplace l’ancienne entrée « Exemples de prompts » dans le menu et sur l’accueil. L’adresse `/exemples/` redirige vers le bloc des exemples ; les douze URL `/exemples/[slug]/` restent identiques et leurs liens de retour rejoignent ce bloc.
+
+Les outils IA sont Gamma, NotebookLM / Gemini Notebook, Google Gemini, Mammouth AI, Perplexity, ElevenLabs et AnythingLLM. Les outils complémentaires sont Buffer (publication, avec des fonctions IA) et Remotion (création vidéo avec du code, une seule fiche). Les chaînes sont Projets IA et Shubham Sharma, aux adresses indiquées par le formateur. Chaque fiche présente l’usage principal, un résumé, une idée concrète pour commencer et un lien direct qui ouvre un nouvel onglet. AnythingLLM et Remotion comportent un repère sur leur dimension technique. Aucun contenu externe ni vidéo n’est chargé automatiquement.
+
+La sélection éditoriale est centralisée dans `src/data/tools.ts`. Les descriptions des outils ont été vérifiées le 27 octobre 2026 à partir des sites officiels : [Gamma](https://gamma.app/), [Google Gemini](https://support.google.com/gemini/answer/13275745?hl=fr), [NotebookLM / Gemini Notebook](https://support.google.com/gemininotebook/answer/16179559?hl=fr), [Mammouth AI](https://mammouth.ai/), [Perplexity](https://www.perplexity.ai/en-GB/hub), [ElevenLabs](https://elevenlabs.io/), [AnythingLLM](https://docs.anythingllm.com/chatting-with-documents/introduction), [Buffer](https://buffer.com/) et [Remotion](https://www.remotion.dev/). L’adresse historique `notebooklm.google` rejoint désormais la présentation de Gemini Notebook. Les tarifs et quotas ne sont pas reproduits pour éviter des indications rapidement périmées.
+
+Les exemples conservent huit catégories. Leur recherche locale porte sur le titre, la description, le besoin et les mots-clés ; elle ignore la casse et les accents et se combine avec la catégorie. Une action permet de réinitialiser les filtres, y compris quand aucun résultat ne correspond. Cette recherche filtre uniquement les exemples ; les autres blocs restent accessibles.
 
 Chaque fiche possède une URL `/exemples/[slug]/`, un besoin, un prompt copiable, des explications, les variables à remplacer et trois à cinq pistes d’adaptation. Les pages sont générées statiquement et restent consultables sans JavaScript ; la recherche et la copie automatique nécessitent JavaScript. Le cas Gamma prépare un contenu textuel sans promettre de fonctionnalité particulière de l’outil. Le cas documentaire demande de fournir le texte ou le fichier à l’assistant choisi ; PromptOS n’analyse aucun document.
 
@@ -93,7 +99,7 @@ npm run build
 - `npm test` : 96 tests avec le moteur natif de Node : les 79 tests existants et 17 tests de préparation des tâches (calendrier, fuseaux, modes, contexte autonome, capacités, confirmation et validation).
 - `npm run check` : `astro check`, puis `svelte-check` pour vérifier explicitement les composants Svelte.
 - `npm run validate:data` : validation des catalogues et champs des trois ateliers, des règles du plan de veille et de sa planification, des huit catégories et des douze exemples.
-- `npm run build` : validation des données, puis génération de 17 pages statiques dans `dist/`.
+- `npm run build` : validation des données, puis génération des pages statiques et de la redirection de l’ancien catalogue dans `dist/`.
 
 L’historique des contrôles de la première version se trouve dans [docs/validation.md](docs/validation.md).
 
@@ -110,6 +116,7 @@ public/data/                  14 catalogues JSON + field-help.json
 public/data/personalization/  17 catalogues indépendants + field-help.json
 public/data/watch-plan/       Catalogues, aides et règles communes du plan de veille
 src/data/examples/            12 fiches JSON + categories.json
+src/data/tools.ts             Sélection éditoriale des outils et chaînes YouTube
 src/layouts/BaseLayout.astro  Structure, navigation et pied de page
 src/pages/                    Accueil, trois ateliers, catalogue et route statique des exemples
 src/components/ui/            Champ réutilisable, aide dépliable et copie avec repli
@@ -170,7 +177,7 @@ Les polices Space Grotesk et DM Sans sont incluses dans le build via Fontsource.
 
 ## Déploiement statique
 
-Après `npm run build`, copier **tout le contenu de `dist/`** sur un hébergement statique, avec `index.html` comme document par défaut. Les routes principales sont `/`, `/atelier/`, `/instructions-personnalisees/`, `/plan-de-veille/` et `/exemples/`, accompagnées des douze pages `/exemples/[slug]/`. Aucun serveur Node n’est nécessaire en production. Servir le site en HTTPS pour la copie dans le presse-papiers.
+Après `npm run build`, copier **tout le contenu de `dist/`** sur un hébergement statique, avec `index.html` comme document par défaut. Les routes principales sont `/`, `/atelier/`, `/instructions-personnalisees/`, `/plan-de-veille/` et `/outils-ia/`, accompagnées des douze pages `/exemples/[slug]/` et de la redirection HTML `/exemples/`. Aucun serveur Node n’est nécessaire en production. Servir le site en HTTPS pour la copie dans le presse-papiers.
 
 La configuration actuelle suppose un hébergement à la racine d’un domaine. Un hébergement dans un sous-dossier demanderait d’adapter `base` et les liens internes.
 

@@ -93,7 +93,7 @@
         <PersonalizationResult {result} {stale} onmodify={() => goTo(sections[0].id)} onreset={askReset} />
       </section>
     </form>
-    <div class="workshop-bottom"><span>Des préférences à tester et à ajuster selon vos besoins.</span><a href="/exemples/">Explorer les exemples ↗</a></div>
+    <div class="workshop-bottom"><span>Des préférences à tester et à ajuster selon vos besoins.</span><a href="/outils-ia/#exemples-prompts">Explorer les exemples ↗</a></div>
   </div>
 </div>
 <dialog bind:this={resetDialog} class="reset-dialog" aria-labelledby="reset-instructions-title" oncancel={event => { event.preventDefault(); cancelReset(); }}>

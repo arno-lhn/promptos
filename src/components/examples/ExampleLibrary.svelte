@@ -19,11 +19,11 @@
     {#each filtered as example (example.id)}
       <article class="resource-card">
         <span class="category-label">{exampleCategories.find(category => category.id === example.category)?.label}</span>
-        <h2>{example.title}</h2><p>{example.description}</p><p class="card-need"><strong>Votre besoin</strong>{example.need}</p>
+        <h3>{example.title}</h3><p>{example.description}</p><p class="card-need"><strong>Votre besoin</strong>{example.need}</p>
         <a class="button secondary" href={`/exemples/${example.slug}/`} aria-label={`Voir l’exemple : ${example.title}`}>Voir l’exemple <span aria-hidden="true">↗</span></a>
       </article>
     {/each}
   </div>
 {:else}
-  <div class="library-empty"><h2>Aucun exemple ne correspond à votre recherche.</h2><p>Essayez un autre mot-clé ou une autre catégorie.</p><button type="button" class="button primary" onclick={resetFilters}>Réinitialiser les filtres</button></div>
+  <div class="library-empty"><h3>Aucun exemple ne correspond à votre recherche.</h3><p>Essayez un autre mot-clé ou une autre catégorie.</p><button type="button" class="button primary" onclick={resetFilters}>Réinitialiser les filtres</button></div>
 {/if}

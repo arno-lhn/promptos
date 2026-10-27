@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ExampleLibrary from '../components/examples/ExampleLibrary.svelte';
+import ResourceCards from '../components/resources/ResourceCards.astro';
+import { activeExamples } from '../lib/examples-data.ts';
+import { learningResources } from '../data/tools';
+const ai = learningResources.filter(resource => resource.group === 'ai');
+const complementary = learningResources.filter(resource => resource.group === 'complementary');
+const learning = learningResources.filter(resource => resource.group === 'learning');
+---
+<BaseLayout title="Outils IA" description="Des exemples de prompts, une sélection d’outils IA et complémentaires, et deux chaînes YouTube pour apprendre et choisir selon votre besoin.">
+  <div class="resource-page tools-page page-width">
+    <header class="resource-intro"><span class="eyebrow"><span class="small-dot"></span> DES REPÈRES POUR CHOISIR ET PRATIQUER</span><h1>Outils <span>IA</span></h1><p>Des exemples de prompts à adapter, des outils pour vos projets et des ressources pour approfondir. Partez de votre besoin et explorez une possibilité à la fois.</p></header>
+    <nav class="resource-jumps" aria-label="Blocs de la page Outils IA">
+      <a href="#exemples-prompts"><span class="eyebrow">01 · {activeExamples.length} CAS PRATIQUES</span><strong>Exemples de prompts</strong><span aria-hidden="true">↘</span></a>
+      <a href="#outils-ia"><span class="eyebrow">02 · {ai.length} OUTILS</span><strong>Outils IA</strong><span aria-hidden="true">↘</span></a>
+      <a href="#outils-complementaires"><span class="eyebrow">03 · {complementary.length} OUTILS</span><strong>Outils complémentaires</strong><span aria-hidden="true">↘</span></a>
+      <a href="#pour-aller-plus-loin"><span class="eyebrow">04 · {learning.length} CHAÎNES YOUTUBE</span><strong>Pour aller plus loin</strong><span aria-hidden="true">↘</span></a>
+    </nav>
+    <section class="resource-block" id="exemples-prompts" tabindex="-1" aria-labelledby="examples-title">
+      <header class="resource-block-heading"><span class="eyebrow">01 · COMPRENDRE PAR L’EXEMPLE</span><h2 id="examples-title">Exemples de prompts</h2><p>Douze demandes structurées pour différents usages : comprenez leur construction, adaptez-les à votre situation et copiez-les dans l’IA de votre choix.</p></header>
+      <noscript><p class="personal-data-note">Les douze exemples restent consultables. Activez JavaScript pour utiliser la recherche et les filtres.</p></noscript>
+      <ExampleLibrary examples={activeExamples} client:load />
+    </section>
+    <section class="resource-block" id="outils-ia" tabindex="-1" aria-labelledby="ai-tools-title">
+      <header class="resource-block-heading"><span class="eyebrow">02 · CHOISIR SELON SON BESOIN</span><h2 id="ai-tools-title">Outils IA</h2><p>Rédiger, créer un support, comprendre des documents ou explorer des sources : ces outils placent l’IA au cœur de leur usage. Chaque fiche vous donne un premier cas concret à tester.</p></header>
+      <ResourceCards resources={ai} />
+    </section>
+    <section class="resource-block" id="outils-complementaires" tabindex="-1" aria-labelledby="complementary-tools-title">
+      <header class="resource-block-heading"><span class="eyebrow">03 · ORGANISER ET PRODUIRE</span><h2 id="complementary-tools-title">Outils complémentaires</h2><p>Des outils utiles autour de vos projets numériques. Leur fonction principale est la publication ou la création vidéo ; ils peuvent aussi proposer des fonctions IA ou s’utiliser avec elle.</p></header>
+      <ResourceCards resources={complementary} />
+    </section>
+    <section class="resource-block" id="pour-aller-plus-loin" tabindex="-1" aria-labelledby="learning-title">
+      <header class="resource-block-heading"><span class="eyebrow">04 · CONTINUER À APPRENDRE</span><h2 id="learning-title">Pour aller plus loin</h2><p>Deux chaînes YouTube pour approfondir la compréhension technique, découvrir des usages et explorer l’automatisation à travers des exemples concrets.</p></header>
+      <ResourceCards resources={learning} />
+    </section>
+    <p class="resource-footnote">Les liens externes s’ouvrent dans un nouvel onglet. Les fonctionnalités et les conditions d’accès évoluent : consultez le site officiel de chaque outil. Cette sélection ne nécessite aucune inscription dans PromptOS.</p>
+  </div>
+</BaseLayout>

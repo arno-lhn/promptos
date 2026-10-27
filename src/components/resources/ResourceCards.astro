@@ -1,0 +1,15 @@
+---
+import type { LearningResource } from '../../data/tools';
+interface Props { resources: LearningResource[]; }
+const { resources } = Astro.props;
+---
+<div class="example-grid tools-grid">
+  {resources.map(resource => <article class="resource-card tool-card" id={`resource-${resource.id}`}>
+    <span class="category-label">{resource.purpose}</span>
+    <h3>{resource.name}</h3>
+    <p>{resource.description}</p>
+    <p class="card-need"><strong>Une idée pour commencer</strong>{resource.example}</p>
+    {resource.note && <p class="resource-entry-note">{resource.note}</p>}
+    <a class="button secondary" href={resource.url} target="_blank" rel="noopener noreferrer">{resource.group === 'learning' ? 'Voir la chaîne' : 'Site officiel'}<span class="sr-only"> {resource.name} (nouvel onglet)</span> <span aria-hidden="true">↗</span></a>
+  </article>)}
+</div>
